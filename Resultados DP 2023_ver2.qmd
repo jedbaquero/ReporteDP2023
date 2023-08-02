@@ -1,0 +1,1350 @@
+---
+title: "Informe Resultados del Programa del Diploma IB - Convocatoria Mayo 2023"
+subtitle: "Gimnasio Colombo Británico - Bilingüe Internacional"
+author: "Jorge Eduardo Baquero C."
+affiliation: "Coordinación Programa del Diploma"
+format:
+  html: 
+    theme: zephyr
+    fontsize: 1.063em
+    linestretch: 1.3
+    grid:
+     sidebar-width: 210px
+     body-width: 942px
+     margin-width: 25px
+     gutter-width: 1.5rem
+    toc: true
+    toc-expand: true
+    toc-title: Contenido
+    toc-location: left
+execute:
+     echo: false
+     warning: false
+lang: es
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+library(tidyverse)
+library(janitor)
+library(gt)
+library(forcats)
+library(viridis)
+library(RColorBrewer)
+library(ggtext)
+library(gtExtras)
+library(readxl)
+```
+
+## 1. Generalidades y población
+
+La session de mayo de 2023 fue la segunda presentación de candidatos del GCB que cumplieron con los requisitos dispuestos para el desarrollo del programa del Diploma IB durante dos años. Se presentaron 53 candidatos que elaboraron en total 424 componentes de evaluación (que incluyen las pruebas por cada asignatura, los trabajos internos de cada una de ellas, las monografías y los componentes de evaluación de TdC).
+
+En esta convocatoria, de los 53 candidatos, 29 fueron hombres y 24 mujeres ( @fig-distribucion-aprobacion-sexo ). **37 estudiantes de los 53 registrados (`r round(37/53 * 100, 0)`%) obtuvieron el Diploma IB** con una media de puntaje para los estudiantes que obtuvieron el Diploma de 29 puntos La nota promedio de los estudiantes que obtuvieron el Diploma fue de 4,60 por asignatura. Este resultado es inferior al obtenido en la sesión de noviembre 2022, donde se obtuvo un 74% de Diplomas otorgados y una media de 4,77 por asignatura. La distribución de los estudiantes que recibieron el Diploma fue equivalente entre ambos sexos ( @fig-distribucion-aprobacion-sexo)
+
+```{r}
+#| label: alumnos-sexo
+alumnos_sexo <- read_delim("alumnos_sexo.csv", 
+    delim = "\t", escape_double = FALSE, 
+    col_types = cols(Sexo = col_factor(levels = c("F", 
+        "M"))), trim_ws = TRUE)
+```
+
+```{r}
+#| label: fig-distribucion-aprobacion-sexo
+#| fig-cap: "Distribución y Aprobación de candidatos por sexo"
+#| fig-subcap: 
+#|   - "Candidatos Diploma IB 2023 por sexo"
+#|   - "Obtención del Diploma por sexo"
+#| layout-ncol: 2
+
+ggplot(alumnos_sexo, aes(Sexo)) +
+     geom_bar(aes(fill = Sexo), width = 0.5) +
+     geom_text(aes(label = after_stat(count)), size = 5,
+               stat = "count", vjust = 1.5, colour = "white") +
+     labs(y = "Número de Estudiantes") +
+     theme_minimal() +
+     scale_fill_grey() +
+     theme(
+          axis.title = element_text(color = "black", family = "sans", face = "bold"),
+          axis.text = element_text(color = "black", family = "sans", face = "bold"),
+          text = element_text(family = "sans", face = "bold")
+     )
+
+resultados_generales2_2 <- read_csv("resultados_generales.csv")
+
+aprobacion_sexo <- resultados_generales2_2 %>% 
+     filter(Diploma == "SI") %>%
+     distinct(estudiante, sexo) %>% 
+     ggplot(aes(sexo), group = sexo) +
+     geom_bar(aes(fill = sexo))+
+     geom_text(aes(label = after_stat(count)),  size = 5,
+               stat = "count", vjust = 1.5, colour = "white") +
+     labs(y = "Número de Estudiantes") +
+     theme_minimal() +
+     scale_fill_grey() +
+     theme(
+          axis.title = element_text(color = "black", family = "sans", face = "bold"),
+          axis.text = element_text(color = "black", family = "sans", face = "bold"),
+     )
+aprobacion_sexo
+```
+
+El estudiante que obtuvo el mayor puntaje fue **Juan David Uribe**, con 38 puntos totales y el estudiante con la mejor monografía (A -- en la asignatura Español A) fue el estudiante **David Pino Rozo.** De los 16 estudiantes que no obtuvieron el Diploma, 6 de ellos obtuvieron puntajes superiores a 24 (puntaje mínimo para alcanzarlo) pero desafortunadamente no cumplieron con la condición de obtener el mínimo de puntos necesarios en sus asignaturas de nivel superior (12 puntos). Con ellos, el porcentaje de aprobación del Diploma hubiera sido del 90%. Los estudiantes con menores puntajes fueron Alejandro Castillo y Daniel Triviño, quienes solo alcanzaron 20 puntos de 45. @tbl-mejorespuntajes
+
+```{r}
+#| include: false
+Resultados_Diploma_IB_2023 <- read_excel("Resultados Diploma IB 2023.xlsx", 
+    sheet = "Resultados 2023")
+
+resultados_generales <- Resultados_Diploma_IB_2023 
+```
+
+```{r}
+#| echo: false
+
+resultados_generales2 <- clean_names(resultados_generales) %>%
+     rename(
+          español_nm = espanol_a_nm,
+          español_ns = espanol_a_ns,
+          english_nm = ingles_b_nm,
+          english_ns = ingles_b_ns,
+          francés_ab = frances_ab_nm,
+          global_nm = politica_global_nm,
+          global_ns = politica_global_ns,
+          history_nm = historia_nm,
+          física_nm = fisica_nm,
+          física_ns = fisica_ns,
+          química_nm = quimica_nm,
+          química_ns = quimica_ns,
+          biología_ns = biologia_ns,
+          comp_science_nm = computer_science_nm,
+          matemáticas_nm = matematicas_nm,
+          matemáticas_ns = matematicas_ns,
+          TdC = td_c,
+          EE = ee,
+          Diploma = diploma) %>% 
+     pivot_longer(español_nm:matemáticas_ns, names_to = "asignatura", values_to = "nota")
+```
+
+```{r}
+#| label: tbl-mejorespuntajes
+#| tbl-cap: "Listado de puntajes obtenidos Diploma IB - Mayo 2023)"
+mejores_puntajes <- resultados_generales2 %>% 
+     clean_names() %>% 
+     distinct(estudiante, puntos_totales,puntos_adicionales, diploma) %>% 
+     filter(!is.na(puntos_totales)) %>% 
+     arrange(desc(puntos_totales), desc(puntos_adicionales)) %>% 
+     mutate(row_n = row_number(), .before = estudiante) %>% 
+     select(row_n, estudiante:diploma)
+     
+tab1 <- mejores_puntajes %>% 
+     slice(1:27) %>% 
+     gt() %>% 
+     cols_label(
+          row_n = "Puesto",
+          estudiante = "Estudiante",
+          puntos_totales = "Puntos Obtenidos",
+          puntos_adicionales = "Puntos Adic.",
+          diploma = "Diploma") %>%
+     cols_align(align = "left",columns = everything()) %>% 
+     cols_width(
+          puntos_totales ~ px(10),
+          puntos_adicionales ~ px(5)
+     ) %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black", size = 10),
+          locations = cells_column_labels()
+     ) %>% 
+     tab_style(
+          style = cell_text(color = "black", size = 9),
+          locations = cells_body()) %>% 
+     tab_style(style = list(
+          cell_fill(color = "#fcd7c5"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = diploma, 
+                                 rows =  diploma == "NO")) %>%
+     tab_options(table.font.size = pct(35),
+                 heading.align = 'left',
+                 heading.title.font.size = px(14), heading.title.font.weight = "bold") %>% 
+     gt_color_rows(columns = row_n, domain = 1:53, palette = "ggsci::blue_material") %>% 
+     gt_theme_pff()
+
+tab2 <- mejores_puntajes %>%
+     slice(28:53) %>%
+     gt() %>%
+     cols_label(
+          row_n = "Puesto",
+          estudiante = "Estudiante",
+          puntos_totales = "Puntos Obtenidos",
+          puntos_adicionales = "Puntos Adic.",
+          diploma = "Diploma") %>%
+     cols_align(align = "left",columns = everything()) %>% 
+     cols_width(
+          puntos_totales ~ px(10),
+          puntos_adicionales ~ px(5)
+     ) %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black", size = 10),
+          locations = cells_column_labels()
+     ) %>% 
+     tab_style(
+          style = cell_text(color = "black", size = 9),
+          locations = cells_body()) %>% 
+     tab_style(style = list(
+          cell_fill(color = "#fcd7c5"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = diploma, 
+                                 rows =  diploma == "NO")) %>% 
+     tab_options(table.font.size = pct(35),
+                 heading.align = 'left',
+                 heading.title.font.size = px(14), heading.title.font.weight = "bold") %>% 
+     gt_color_rows(columns = row_n, domain = 1:53, palette = "ggsci::blue_material") %>% 
+     gt_theme_pff()
+
+listed_tables <- list(tab1, tab2)
+
+gt_two_column_layout(listed_tables, vwidth = 1200)
+```
+
+Por otro lado, los estudiantes atendieron 16 cursos distribuídos como se muestra en la @fig-distribucion-asignaturas . La mayoría de estudiantes se inscribió en Español A: Literatura (Grupo 1) en el nivel medio, mientras que la mayoría optó por tomar English B (Grupo 2) y Global Politics en el nivel superior pero solo 4 se presentaron como candidatos en la materia de History SL (Grupo 3)
+
+En el caso de las ciencias (Grupo 4), los estudiantes debían escoger de manera obligatoria entre física y química (aunque se permitió que un estudiante tomara ambas[^1]). 33 estudiantes tomaron química (19 en nivel superior y 14 en el nivel medio), mientras que solo 21 tomaron física (12 en NS y 9 en NM).
+
+Biología NS, Francés ab initio NM y Computer Science SL eran materias electivas por lo que eran excluyentes entre ellas. 30 estudiantes atendieron Francés ab initio, y 9 Computer Science, ambas ofrecidas solo en nivel medio. Biología, que se ofreció como electiva (para aquellos estudiantes interesados en tomar dos ciencias) presentó 12 candidatos. Finalmente, en el caso de matemáticas, el GCB ofrece solo una de las asignaturas ofrecidas por el Diploma en ambos niveles: **Matemáticas - Análisis y Enfoques**. En el nivel superior se presentaron 28 estudiantes, mientras que 25 lo hicieron en el nivel medio.
+
+```{r}
+#| label: fig-distribucion-asignaturas
+#| fig-cap: Alumnos inscritos por asignatura
+
+
+alumnos_asignatura <- read_excel("alumnos_asignatura.xlsx")
+
+ggplot(alumnos_asignatura, aes(reorder(asignatura, n), n)) +
+     geom_col() +
+     geom_text(aes(label = n, fontface = "bold"), hjust = 2, size = 4,
+               color = "white", family = "sans",
+               size = 2.5) +
+     theme_minimal() +
+     scale_fill_discrete() +
+     coord_flip() +
+     labs(y= "Número de estudiantes inscritos") +
+     theme(axis.title.y = element_blank(),
+           axis.text = element_text(color = "black", family = "sans", face = "bold")) 
+```
+
+[^1]: Sebastián Rojas Barragan, quien obtuvo 34 puntos totales, atendiendo física y química en el nivel superior con notas de 6 y 4 respectivamente.
+
+## 2. Resultados
+
+Se presentó la siguiente distribución de resultados ( @fig-distribución-resultados). En general, la mayoría de estudiantes que obtuvo el diploma, alcanzaron el rango de los 25 a los 30 puntos. Como se mencionó al inicio, el promedio de puntos obtenidos por aquellos quienes obtuvieron el Diploma IB fue de 29 puntos, uno por debajo del promedio obtenido por los estudiantes que obtuvieron su diploma en la sesión de noviembre 2022.
+
+La calificación promedio de alumnos del colegio que obtuvo el Diploma en esta convocatoria fue de 4,60; 10 décimas por debajo de la calificación promedio obtenida en noviembre de 2022 (4,7)
+
+```{r}
+#| label: fig-distribución-resultados
+#| fig-cap: "Distribución de puntajes convocatoria mayo 2023"
+
+resultados_generales %>% 
+     clean_names() %>% 
+     select(estudiante, sexo, puntos_totales) %>% 
+     ggplot(aes(puntos_totales, fill = after_stat(x))) +
+     geom_histogram(binwidth = 2) +
+     scale_y_continuous(limits = c(0,16), breaks = seq(0,16, by =2)) +
+     scale_fill_gradient(low = "#F4F269", high = "#5CB270") +
+     geom_vline(xintercept = 24, linetype = "dashed", color = "red") +
+     geom_vline(xintercept = 29, linetype = "dashed", color = "blue") +
+     annotate(geom = "text", x = 31, y = 15, 
+              label = "Puntaje promedio de estudiantes\nque obtuvieron el Diploma",
+              color = "blue", size = 3, family = "sans", fontface = "bold") +
+     annotate(geom = "text", x = 21.5, y = 15, 
+              label = "Puntuación mínima para la\nobtención del Diploma",
+              color = "red", size = 3, family = "sans", fontface = "bold") +
+     theme_minimal() +
+     labs(x = "Puntaje total", y = "Estudiantes") +
+     theme(legend.position = "none",
+           axis.title = element_text(family = "Helvetica-Bold",
+                                     face = "bold"),
+           axis.text = element_text(family = "Helvetica-Bold",
+                                    face = "bold")
+     )
+```
+
+Los promedios de los resultados obtenidos por asignatura en la sesión de mayo 2023 se muestran en la @tbl-promedio y la @fig-promedio-asignaturas siguiente:
+
+```{r}
+promedios_gcb_mundial <- read_delim("promedios_gcb_mundial.csv", 
+    delim = "\t", escape_double = FALSE, 
+    col_types = cols(`Promedio Nov 2022` = col_double()), 
+    trim_ws = TRUE)
+
+promedios_gcb_mundial <- promedios_gcb_mundial %>% 
+     clean_names()
+```
+
+```{r}
+#| label: tbl-promedio
+#| tbl-cap: "Promedios GCB y Mundiales IB 2023"
+
+tabla_promedios_gcb_mundial <- promedios_gcb_mundial %>% 
+     gt() %>% 
+     cols_label(
+          asignatura = "Asignatura",
+          promedio_gcb_2023 = "GCB",
+          promedio_mundial_2023 = "Mundial",
+          promedio_nov_2022 = "GCB(2022)") %>% 
+     tab_spanner(
+          label = md("**Nota Promedio 2023**"),
+          columns = 2:3) %>% 
+     tab_header(title = md('**Resultados por asignaturas Diploma IB**')) %>% 
+     fmt_number(columns = where(is.numeric), decimals = 2) %>% 
+     sub_missing(missing_text = "-") %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()
+        ) %>% 
+     tab_style(style = list(
+           cell_fill(color = "lightcyan"),
+           cell_text(weight = "bold")),
+           locations = cells_body(columns = promedio_gcb_2023, 
+                                  rows =  promedio_gcb_2023 >= promedio_mundial_2023)) %>% 
+     tab_style(style = list(
+           cell_fill(color = "#fcd7c5"),
+           cell_text(weight = "bold")),
+           locations = cells_body(columns = promedio_gcb_2023, 
+                                  rows =  promedio_gcb_2023 <= 3.5)) %>% 
+     tab_footnote(
+          footnote = md("Los resultados en cyan corresponden a las asignaturas que obtuvieron promedios por encima del promedio mundial. Los resultados en rosa establecen las asignaturas con menores resultados en la convocatoria"),
+          locations = cells_column_labels(columns = promedio_gcb_2023)
+     ) %>% 
+     opt_footnote_marks(marks = "standard") %>% 
+     tab_options(table.font.size = 13,
+                 heading.align = 'left', heading.title.font.size = px(18))
+
+tabla_promedios_gcb_mundial
+```
+
+```{r}
+promedios_gcb_mundial_longer <- promedios_gcb_mundial %>% 
+     pivot_longer(
+          promedio_gcb_2023:promedio_nov_2022,
+          names_to = "resultado", values_to = "promedio") %>% 
+     mutate(asignatura = as.factor(asignatura))
+
+grupo1_2 <- c("ESPAÑOL A NM", "ESPAÑOL A NS", "INGLÉS B NM", "INGLÉS B NS", "FRANCÉS AB NM")
+grupo3 <- c("POLÍTICA GLOBAL NM", "POLÍTICA GLOBAL NS",
+            "HISTORIA NM")
+grupo4 <- c("FÍSICA NM", "FÍSICA NS", "QUÍMICA NM",
+              "QUÍMICA NS", "BIOLOGÍA NS", "COMPUTER SCIENCE SL")
+grupo5 <- c("MATEMÁTICAS NM", "MATEMÁTICAS NS")
+```
+
+```{r}
+#| label: fig-promedio-asignaturas
+#| fig-cap: "Promedios GCB 2023, promedio mundial y promedio GCB 2022"
+#| fig-subcap: 
+#|   - "Grupo 1 y Grupo 2: Español A, Inglés B, Francés ab initio"
+#|   - "Grupo 3: Política Global, Historia"
+#|   - "Grupo 4: Física, Química, Biología y Computer Science"
+#|   - "Grupo 5: Matemáticas: Análisis y Enfoques"
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+etiquetas <- c("GCB 2023", "Promedio\nMundial 2023", "GCB 2022")
+
+# promedios grupo 1 y grupo 2
+promedios_gcb_mundial_longer %>% 
+     filter(asignatura %in% grupo1_2) %>% 
+     mutate(asignatura = factor(asignatura,
+                   levels = c("ESPAÑOL A NM", "ESPAÑOL A NS", "INGLÉS B NM", "INGLÉS B NS", "FRANCÉS AB NM"))) %>% 
+     ggplot(aes(asignatura, promedio, fill = resultado)) + 
+     geom_col(position = "dodge") +
+     geom_text(
+          aes(label = promedio), colour = "black", size = 4.5,
+          family = "sans", fontface = "bold",
+          vjust = 1.5, position = position_dodge(.9)) +
+     theme_minimal() +
+     scale_fill_manual(values = brewer.pal(3, "Set2"), labels = etiquetas) +
+     theme(
+          legend.title = element_blank(),
+          legend.position = "bottom",
+          legend.text = element_text(family = "Helvetica-Bold", face = "bold"),
+          axis.title = element_blank(),
+          axis.text = element_text(color = "black", 
+                                   family = "Helvetica-Bold", face = "bold")
+     )
+     
+
+# promedios grupo 3
+promedios_gcb_mundial_longer %>% 
+     filter(asignatura %in% grupo3) %>% 
+     mutate(asignatura =
+                 factor(asignatura, levels = c("POLÍTICA GLOBAL NM",
+                                               "POLÍTICA GLOBAL NS",
+                                               "HISTORIA NM"))) %>% 
+     ggplot(aes(asignatura, promedio, fill = resultado)) + 
+     geom_col(position = "dodge") +
+     geom_text(
+          aes(label = promedio), colour = "black", size = 4.5,
+          family = "sans", fontface = "bold",
+          vjust = 1.5, position = position_dodge(.9)) +
+     theme_minimal() + 
+     scale_fill_manual(values = brewer.pal(3, "Set2"), labels = etiquetas) +
+     theme(legend.title = element_blank(),
+           legend.position = "bottom",
+           legend.text = element_text(color = "black", family = "Helvetica-Bold",
+                                      face = "bold"),
+          axis.title = element_blank(),
+          axis.text = element_text(color = "black", family = "Helvetica-Bold",
+                                   face = "bold"))
+# promedios grupo 4
+promedios_gcb_mundial_longer %>% 
+     filter(asignatura %in% grupo4) %>% 
+     mutate(asignatura =
+                 factor(asignatura, 
+                        levels =
+                             c("FÍSICA NM", "FÍSICA NS", "QUÍMICA NM",
+                               "QUÍMICA NS", "BIOLOGÍA NS", "COMPUTER \n SCIENCE NM"))) %>% 
+     ggplot(aes(asignatura, promedio, fill = resultado)) + 
+     geom_col(position = "dodge") +
+     geom_text(
+          aes(label = promedio), colour = "black", size = 4.5, 
+          family = "sans", fontface = "bold",
+          vjust = 1.5, position = position_dodge(.9)) +
+     theme_minimal() + 
+      scale_x_discrete(labels = c("FÍSICA NM", "FÍSICA NS", "QUÍMICA NM",
+                                 "QUÍMICA NS", "BIOLOGÍA NS", "COMPUTER\nSCIENCE NM")) +
+     scale_fill_manual(values = brewer.pal(3, "Set2"), labels = etiquetas) +
+     theme(legend.title = element_blank(),
+           legend.position = "bottom",
+           legend.text = element_text(family = "Helvetica-Bold",
+                                      face = "bold"),
+          axis.title = element_blank(),
+          axis.text = element_text(color = "black", family = "Helvetica-Bold",
+                                   face = "bold"))
+
+# promedios grupo 5
+promedios_gcb_mundial_longer %>% 
+     filter(asignatura %in% grupo5) %>% 
+     ggplot(aes(asignatura, promedio, fill = resultado)) + 
+     geom_col(position = "dodge") +
+     geom_text(
+          aes(label = promedio), colour = "black", size = 4.5,
+          family = "sans", fontface = "bold",
+          vjust = 1.5, position = position_dodge(.9)) +
+     theme_minimal() + 
+     scale_fill_manual(values = brewer.pal(3, "Set2"), labels = etiquetas) +
+     theme(legend.title = element_blank(),
+           legend.position = "bottom",
+           legend.text = element_text(color = "black", family = "Helvetica-Bold",
+                                      face = "bold"),
+          axis.title = element_blank(),
+          axis.text = element_text(family = "Helvetica-Bold",
+                                   face = "bold"))
+```
+
+### 2.1 Comentarios sobre los resultados promedio
+
+De estos resultados, se tiene que las asignaturas del Grupo 1 (Español A: Literatura) y el Grupo 2 (English B y Francés *ab initio*) estan en los niveles del promedio mundial. Tanto English B como Francés *ab initio*, así como Español A NS, obtuvieron promedios superiores al promedio alcanzado mundialmente.
+
+En el caso del Grupo 3, para Global Politics NM se observa un promedio alcanzado significativamente equivalente al promedio mundial. Para el nivel superior, el promedio del GCB es menor al obtenido de manera global (4,68 frente a 5,11 en el mundo). En el caso de History NM, los cuatro estudiantes que se presentaron como candidatos en esta asignatura obtuvieron en promedio una nota un punto y medio por debajo (24,9%) del promedio mundial[^2].
+
+Las ciencias en general tuvieron un desempeño por debajo de los promedios mundiales. Computer Science SL (que presentó candidatos por primera vez) y Biología NS fueron las asignaturas con los puntajes más cercanos a los promedios mundiales (3,89 frente a 3,94 en el caso de Computer Science y 4,08 frente a 4,4 en el caso de Biolgía). Se destaca el resultado de Biología cuyos estudiantes obtuvieron en promedio una nota de 4,1 (aprobatoria), superando al promedio obtenido en la convocatoria de 2022 (3,92).
+
+Para el caso de física, los estudiantes inscritos obtuvieron notas (en ambos niveles) en promedio inferiores a los promedios alcanzados mundialmente. En el caso del nivel superior, sin embargo, el promedio obtenido aunque inferior al del mundo (4,87), es superior a 4 (4,17), considerándose un promedio aprobatorio. Se destaca que para ambos niveles, los resultados obtenidos en esta convocatoria fueron superiores a los obtenidos por los estudiantes de la primera promoción de IB en 2022 ( @tbl-variacion-promedios ).
+
+Por otro lado, el caso de química presenta los mayores desafíos pedagógicos y de evaluación. En esta convocatoria, los promedios obtenidos por los estudiantes estuvieron muy por debajo de los promedios mundiales, con casi dos puntos por debajo tanto en el nivel medio como en el nivel superior. De igual manera, los resultados obtenidos en esta asignatura durante 2023 fueron inferiores a los obtenidos en 2022, donde también los resultados estuvieron por debajo de los promedios mundiales.
+
+Finalmente, para el caso de Matemáticas: Análisis y Enfoques, se tiene que los promedios alcanzados por los estudiantes durante 2023 fueron inferiores a los promedios mundiales en al menos un punto y medio para ambos niveles. De la misma manera, los resultados obtenidos en esta convocatoria fueron inferiores a los obtenidos en la convocatoria de 2022 ( @tbl-variacion-promedios ).
+
+```{r}
+#| label: tbl-variacion-promedios
+#| tbl-cap: "Variación promedios obtenidos por el GCB 2022-2023"
+
+promedios_gcb_mundial %>% 
+     select(asignatura, promedio_gcb_2023, promedio_nov_2022) %>% 
+     mutate(variacion = (promedio_gcb_2023 - promedio_nov_2022)/promedio_nov_2022) %>% 
+     gt() %>% 
+     cols_label(
+          asignatura = "Asignatura",
+          promedio_gcb_2023 = "GCB 2023",
+          promedio_nov_2022 = "GCB 2022",
+          variacion = "Variación Porcentual") %>% 
+     fmt_percent(columns = variacion, 
+                 rows = everything(),
+                 decimals = 2) %>% 
+     sub_missing(columns = everything(),rows = everything(),
+                 missing_text = "---") |> 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()) %>% 
+     opt_footnote_marks(marks = "standard") %>% 
+     tab_options(table.font.size = 12,
+                 heading.align = 'left', heading.title.font.size = px(16)) %>% 
+     gt_theme_pff()
+```
+
+[^2]: De los cuatro estudiantes inscritos, dos (Maria Alejandra Carrillo y Maria Paula Rodriguez) obtuvieron una nota de 4.
+
+### 2.2 Aprobación por asignatura
+
+En esta convocatoria se presentarón los siguientes porcentajes de aprobación[^3] ( @tbl-porcentajes ). Como es evidente, las asignaturas con menores promedios obtenidos fueron a su vez las asignaturas con menor porcentaje de aprobación. **Química** fue la asignatura con menores promedios y con el menor número de estudiantes que obtuvo una nota igual o superior a 4. En el caso del nivel medio, todos los estudiantes inscritos (15) obtuvieron notas de 3 o menos. En el caso del nivel superior, de los 20 estudiantes inscritos, solo dos obtuvieron una nota igual o superior a 4.
+
+Se destacan las asignaturas de **Español A, English B, Global Politics** y **Francés ab initio**, en donde la mayoría de estudiantes inscritos obtuvo notas superiores o iguales a 4.
+
+```{r}
+promedio_asignatura_porcentaje_aprobacion <- read_csv("promedio_asignatura_porcentaje_aprobacion.csv")
+```
+
+```{r}
+#| label: tbl-porcentajes
+#| tbl-cap-location: bottom
+#| tbl-cap: "Porcentajes de aprobación por asignatura - Mayo 2023"
+
+promedio_asignatura_porcentaje_aprobacion%>% 
+     gt() %>% 
+     cols_label(
+          asignatura = "Asignatura",
+          nota_promedio = "Promedio GCB",
+          porcentaje = "Porcentaje Aprobación") %>% 
+     tab_header(title = md('**Resultados por asignaturas Diploma IB**')) %>% 
+     fmt_number(columns = nota_promedio, decimals = 2) %>%
+     fmt_percent(columns = porcentaje, 
+                 rows = everything(),
+                 decimals = 0) %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()
+     ) %>%
+     tab_style(style = list(
+          cell_fill(color = "#fcd7c5"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = nota_promedio, 
+                                 rows =  nota_promedio <= 4)) %>% 
+     tab_style(style = list(
+          cell_fill(color = "#fcd7c5"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = porcentaje, 
+                                 rows =  porcentaje <0.5)) %>% 
+     tab_style(style = list(
+          cell_fill(color = "#c8faf1"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = porcentaje, 
+                                 rows =  porcentaje > 0.80)) %>% 
+     opt_footnote_marks(marks = "standard") %>% 
+     tab_options(table.font.size = 12,
+                 heading.align = 'left', heading.title.font.size = px(16)) %>% 
+     gt_theme_pff()
+```
+
+::: callout-important
+Es esencial que se haga una revisión a fondo de la **planeación** y **desarrollo** de las asignaturas de ciencias, especialmente en los casos de **física** y **química**, así como evaluar la manera en que debe mejorarse tanto la enseñanza como el aprendizaje de los cursos de **matemáticas**, cuyos resultados son bajos.
+:::
+
+[^3]: Se establece como **aprobación**, el porcentaje de estudiantes que obtuvo una nota de 4 o más en el resultado final de la asignatura.
+
+### 2.3 Distribución de calificación por grupo de asignaturas
+
+En la figura siguiente ( @fig-distribucion-calificaciones-asignatura ) puede observarse la distribución de calificaciones para cada uno de los grupos de asignaturas. Como se observa, en el Grupo 1 las mejores calificaciones se obtuvieron en Español A con 41 estudiantes de 53 (repartidos en NS y NM) en los nivel de calificación 5-7. Se destaca que todos los estudiantes estuvieron en este mismo rango de calificación en la asignatura English B. En el caso de Francés ab initio, 19 de los 30 estudiantes que atendieron la clase estuvieron también en los niveles 5 a 7.
+
+En el caso del Grupo 3, las mejores calificaciones se obtuvieron en Política Global, con 31 estudiantes en el rango 5-6, mientras que en Historia con cuatro estudiantes inscritos, dos estudiantes obtuvieron una nota de 3 y los otros dos, una nota de 4.
+
+Como se ha mencionado anteriormente, el Grupo 4: Ciencias, sigue presentando los mayores desafíos. Ningún estudiante obtuvo una calificación de 7 en alguna de las asignaturas del grupo. La mayoría obtuvo notas en los niveles 2 y 3. Solo en el caso de química, por ejemplo, 31 de los 33 estudiantes obtuvieron notas entre 1 y 3. En el caso de Biología en cambio, 9 de los 12 estudiantes inscritos obtuvieron notas de 4 y 5, lo que influyó en el promedio aprobatorio obtenido.
+
+Finalmente, en el caso del Grupo 5: Mátemáticas, 34 de los 53 estudiantes obtuvo una nota de 2 o 3 en su asignatura, y 19 estuvieron en los niveles 4 o 5, siendo esta última, la nota más alta obtenida en la asignatura (por 4 estudiantes de nivel superior y 2 de nivel medio)
+
+```{r}
+#| label: importar_distribucion_calificaciones_asignatura
+notas_predichas_obtenidas <- read_delim("notas_predichas_obtenidas.csv", 
+                                        delim = "\t", escape_double = FALSE, 
+                                        col_types = cols(Asignatura_PG = col_skip()), 
+                                        trim_ws = TRUE)
+notas_predichas_obtenidas2 <- notas_predichas_obtenidas %>% 
+     mutate(Asignatura = if_else(Asignatura == "INFORMÁTICA NM", "COMPUTER SCIENCE SL", Asignatura))
+
+# funcion grafico distribución de calificaciones
+grafico_distribucion_notas <- function(GRUPO) {
+     distribucion_notas_asignatura <- notas_predichas_obtenidas2 %>%
+          clean_names() %>%
+          select(estudiante, asignatura, nota_obt) %>%
+          filter(asignatura != "EE" & asignatura != "TdC") %>%
+          filter(asignatura %in% GRUPO) %>%
+          mutate(nota_obt = as.factor(nota_obt)) %>%
+          group_by(asignatura, nota_obt) %>%
+          tally() %>%
+          ggplot(aes(x = nota_obt, y = n, fill = asignatura, label = n)) +
+          geom_col() +
+          geom_text(size = 4,  position = position_stack(vjust = 0.5)) +
+          labs(x = "Calificación", y = "Estudiantes") +
+          theme_minimal() +
+          scale_fill_brewer(palette ="Accent") +
+          theme(
+               legend.title = element_blank(),
+               legend.position = "bottom",
+               legend.text = element_text(family = "Helvetica", face = "bold", size = 9),
+               axis.title = element_text(color = "black",
+                                         family = "Helvetica-Bold", face = "bold"),
+               axis.text = element_text(color = "black",
+                                        family = "Helvetica-Bold", face = "bold")
+          )
+     
+     return(distribucion_notas_asignatura)
+}
+```
+
+```{r}
+#| label: fig-distribucion-calificaciones-asignatura
+#| fig-cap: "Distribución de calificaciones por asignatura"
+#| fig-subcap: 
+#|   - "Grupo1 y Grupo 2: Español A, Inglés B, Francés ab initio"
+#|   - "Grupo 3: Política Global, Historia"
+#|   - "Grupo 4: Física, Química, Biología y Computer Science"
+#|   - "Grupo 5: Matemáticas"
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+grafico_distribucion_notas(grupo1_2)
+grafico_distribucion_notas(grupo3)
+grafico_distribucion_notas(grupo4)
+grafico_distribucion_notas(grupo5)
+```
+
+### 2.4 Distribución de puntajes totales por asignatura
+
+En la @tbl-puntos-promedio y en la @fig-distribucion-puntos-asignatura se muestra información más detallada sobre los resultados de la convocatoria de mayo 2023 para las diferentes asignaturas y sus niveles, incluyendo el promedio de puntuación y la desviación estándar de las notas en cada asignatura y nivel.
+
+La puntuación promedio indica el valor medio de las puntuaciones obtenidas por los estudiantes en cada asignatura y nivel[^4]. Por ejemplo, en la asignatura **English B NS** el promedio de puntuación es de 79.6, lo que se tradujo que en promedio los estudiantes obtuvieran una calificación en los niveles más altos de la escala.
+
+La desviación estándar establece la variabilidad de las notas en cada asignatura y nivel. Una desviación estándar alta, como en **Matemáticas: Análisis y Enfoques NS** (8.78), indica que las notas de los estudiantes están más dispersas en esta asignatura y nivel, lo que significa que hay una mayor variabilidad en el rendimiento académico de los estudiantes. Por el contrario, una desviación estándar baja, como en **Química NM** (4.70), sugiere que las notas están más concentradas alrededor del promedio, lo que indica una menor variabilidad en el rendimiento académico de los alumnos.
+
+Los mayores promedios de puntajes totales se encuentran en **English B NS** (79.6) y **English B NM** (78.1), lo que indica que los estudiantes, así como en la convocatoria de 2022, tienden a obtener calificaciones altas en esta asignatura independientemente del nivel en el que se inscriban. Por otro lado, los menores promedios se encuentran en **Matemáticas NM** (26.9) y **Química NM** (25.2).
+
+Las mayores dispersiones en el puntaje obtenido se encuentró en **Física NS** (12.8) y **Español A NM** (12.0), lo que indica que las notas en estas asignaturas y niveles mostraron una mayor variabilidad en el rendimiento de los estudiantes, o en últimas, que el desempeño de los alumnos tiene diferencias muy altas entre ellos. Las menores desviaciones estándar se encuentran en **Química NM** (4.70) y **Política Global NM** (5.90), lo que indica un desempeño mucho más estandarizado por parte de los estudiantes: tienen similares niveles de comprensión y de dificultad.
+
+```{r}
+## Dispersión de notas por asignatura
+notas_componentes <- read_csv("M2023_061156.csv")
+
+notas_componentes_clean <- notas_componentes %>% 
+     clean_names() %>% 
+     select(c(3,4,5,10,12,13,14,15,16,17)) %>%
+     mutate(asignatura = if_else(asignatura == "INFORMÁTICA", 
+                                 "COMPUTER SCIENCE", asignatura)) %>%
+     mutate(asignatura = as_factor(asignatura),
+            nivel = as_factor(nivel),
+            componente = as_factor(componente)) %>% 
+     rename(puntuacion_total = puntuacion_total_ajustada_de_la_asignatura) %>%
+     filter(nivel != "Monografía" & nivel != "TdC") %>% 
+     select(nombre, asignatura, nivel, componente, puntuacion_total)
+
+g1 <- c("ESPAÑOL A: Literatura", "INGLÉS B", "FRANCÉS AB INITIO")
+g3 <- c("POLÍTICA GLOBAL", "HISTORIA")
+g4 <- c("BIOLOGÍA", "FÍSICA", "QUÍMICA", "COMPUTER SCIENCE")
+g5 <- c("MATEMÁTICAS: ANÁLISIS Y ENFOQUES")
+
+rango <- "En este rango de puntuación se encuentra\nel límite inferior del NIVEL 7\npara cada asignatura"
+
+dispersion_notas_g1 <- notas_componentes_clean %>% 
+     distinct(nombre, asignatura, nivel, puntuacion_total) %>% 
+     filter(asignatura %in% c("ESPAÑOL A: Literatura", "INGLÉS B", "FRANCÉS AB INITIO")) %>% 
+     mutate(asignatura = fct_relevel(asignatura, g1)) %>% 
+     ggplot(aes(asignatura, puntuacion_total, fill = nivel)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     #geom_point(fill= "bisque4", size = 2, alpha = 0.4, position=position_jitterdodge()) +
+     geom_hline(yintercept = 75, linetype = "dashed", color = "darkorange", size = 1.25) + 
+     geom_hline(yintercept = 85, linetype = "dashed", color = "darkorange", size = 1.25) +
+     annotate(geom = "text", x = 2.5, y = 96, label = rango, hjust = 0) + 
+     geom_curve(
+          aes(x = 3.15, y = 93, xend = 3, yend = 81),
+          arrow = arrow(length = unit(0.03, "npc"), type="closed"), # Describes arrow head (open or closed)
+          colour = "#EC7014", size = 0.5, curvature = - 0.5, angle = 90) + # Anything other than 90 or 0
+                                                                           # can look unusual
+     scale_y_continuous(limits = c(30,100), n.breaks = 10) +
+     labs(y = "Puntuación Total Obtenida") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "bottom",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+dispersion_notas_g3 <- notas_componentes_clean %>% 
+     distinct(nombre, asignatura, nivel, puntuacion_total) %>% 
+     filter(asignatura %in% g3)  %>% 
+     mutate(asignatura = fct_relevel(asignatura, g3)) %>% 
+     ggplot(aes(asignatura, puntuacion_total, fill = nivel)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     #geom_point(fill= "bisque4", size = 2, alpha = 0.4, position=position_jitterdodge()) +
+     geom_hline(yintercept = 75, linetype = "dashed", color = "darkorange", size = 1.25) + 
+     geom_hline(yintercept = 85, linetype = "dashed", color = "darkorange", size = 1.25) +
+     scale_y_continuous(limits = c(30,100), n.breaks = 10) +
+     labs(y = "Puntuación Total Obtenida") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "bottom",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+
+dispersion_notas_g4 <-notas_componentes_clean %>% 
+     distinct(nombre, asignatura, nivel, puntuacion_total) %>% 
+     filter(asignatura %in% g4)  %>% 
+     mutate(asignatura = fct_relevel(asignatura, g4)) %>% 
+     ggplot(aes(asignatura, puntuacion_total, fill = nivel)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     #geom_point(fill= "bisque4", size = 2, alpha = 0.4, position=position_jitterdodge()) +
+     geom_hline(yintercept = 75, linetype = "dashed", color = "darkorange", size = 1.25) + 
+     geom_hline(yintercept = 85, linetype = "dashed", color = "darkorange", size = 1.25) +
+     scale_y_continuous(limits = c(30,100), n.breaks = 10) +
+     labs(y = "Puntuación Total Obtenida") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "bottom",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+
+dispersion_notas_g5 <-notas_componentes_clean %>% 
+     distinct(nombre, asignatura, nivel, puntuacion_total) %>% 
+     filter(asignatura %in% g5)  %>% 
+     mutate(asignatura = fct_relevel(asignatura, g4)) %>% 
+     ggplot(aes(asignatura, puntuacion_total, fill = nivel)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     #geom_point(fill= "bisque4", size = 2, alpha = 0.4, position=position_jitterdodge()) +
+     geom_hline(yintercept = 75, linetype = "dashed", color = "darkorange", size = 1.25) + 
+     geom_hline(yintercept = 85, linetype = "dashed", color = "darkorange", size = 1.25) +
+     scale_y_continuous(limits = c(30,100), n.breaks = 10) +
+     labs(y = "Puntuación Total Obtenida") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "bottom",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+```
+
+```{r}
+#| label: fig-distribucion-puntos-asignatura
+#| fig-cap: "Distribución de puntos obtenidos por asignatura"
+#| fig-subcap: 
+#|   - "Grupo1 y Grupo 2: Estudios de Lengua y Literatura y Adquisición de Lenguas"
+#|   - "Grupo 3: Individuos y Sociedades"
+#|   - "Grupo 4: Ciencias"
+#|   - "Grupo 5: Matemáticas"
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+dispersion_notas_g1
+dispersion_notas_g3
+dispersion_notas_g4
+dispersion_notas_g5
+```
+
+```{r}
+#| label: tbl-puntos-promedio
+#| tbl-cap-location: bottom
+#| tbl-cap: "Puntuación promedio por asignatura - Mayo 2023"
+
+
+puntuaciones_asignatura <- notas_componentes_clean %>% 
+     group_by(asignatura, nivel) %>% 
+     summarize(promedio_puntos_obtenidos = mean(puntuacion_total),
+               desviacion = sd(puntuacion_total), .groups = "drop") 
+
+puntuaciones_asignatura %>% 
+     gt() %>% 
+     cols_label(
+          asignatura = "Asignatura",
+          nivel = "Nivel",
+          promedio_puntos_obtenidos = "Puntuación Promedio",
+          desviacion = "Desviación estándar") %>%
+     cols_align(align = "left",columns = everything()) %>%
+     fmt_number(columns = where(is.numeric), decimals = 2) %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()
+     ) %>% 
+     tab_style(style = list(
+          cell_fill(color = "lightcyan"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = promedio_puntos_obtenidos, 
+                                 rows =  promedio_puntos_obtenidos >= 50)) %>% 
+     tab_style(style = list(
+          cell_fill(color = "#fcd7c5"),
+          cell_text(weight = "bold")),
+          locations = cells_body(columns = promedio_puntos_obtenidos, 
+                                 rows =  promedio_puntos_obtenidos < 40)) %>%
+     tab_footnote(
+          footnote = md("Los resultados en cyan corresponden a las asignaturas que obtuvieron los puntajes más altos durante la convocatiria"),
+          locations = cells_column_labels(columns = promedio_puntos_obtenidos)) %>% 
+     opt_footnote_marks(marks = "standard") %>% 
+     tab_options(table.font.size = 12,
+                 heading.align = 'left', heading.title.font.size = px(18)) %>% 
+     gt_theme_pff()
+```
+
+[^4]: El puntaje total (en una escala de 0 a 100) es la suma de puntos obtenidos por cada estudiante en cada uno de los componentes de evaluación en su asignatura (pruebas externas, trabajos internos, etc), ponderados por el peso que tiene cada uno de ellos en su calificación final."
+
+### 2.5 Resultados Monografía y TdC
+
+#### 2.5.1 Monografía
+
+Se presentaron 53 trabajos de monografía que se distribuyeron como se ilustra en la @tbl-monografia . En esta convocatoria, el mayor número de trabajos se realizó en las asignaturas del Grupo 3: Individuos y Sociedades. Política Global presentó 14 trabajos e Historia 2 más. Español sin embargo presentó ella sola 12 trabajos de monografía.
+
+A diferencia de la primera convocatoria, en 2023 solo se realizaron 8 trabajos en Ciencias (Biología, Química y Computer Science), pero se dobló el número de trabajos realizados en Matemáticas (6 monografías, frente a 3 de la primera convocatoria.)
+
+Se destaca que de las 53 monografías, 16 de ellas (`r round(16/53 * 100, 0)`%) se realizaron en inglés, un número igual de trabajos a los que se presentaron en este idioma en 2022. En esta ocasión, se presentaron en inglés 11 monografías en la materia **English B**, 3 en **Computer Science**, y 2 en **Política Global.**
+
+```{r}
+
+#| label: "importacion de datos"
+notas_componentes <- read_csv("M2023_061156.csv")
+notas_componentes_clean2 <- notas_componentes %>% 
+     clean_names() %>% 
+     select(c(3,4,5,6,10,12,13,14,15,16,17)) %>%
+     mutate(asignatura = if_else(asignatura == "INFORMÁTICA", 
+                                 "COMPUTER SCIENCE", asignatura)) %>%
+     mutate(asignatura = as_factor(asignatura),
+            nivel = as_factor(nivel),
+            componente = as_factor(componente)) %>% 
+     rename(puntuacion_total = puntuacion_total_ajustada_de_la_asignatura) %>%
+     filter(nivel == "Monografía") %>% 
+     select(c(1,4,5,10, 11)) %>% 
+     rename(calificacion = calificacion_final_de_la_asignatura) %>% 
+     mutate(asignatura = as_factor(asignatura),
+            calificacion = as_factor(calificacion))
+```
+
+```{r}
+#| label: tbl-monografia
+#| tbl-cap: "Distribución de Monografías 2023"
+
+
+tabla_monografias <-notas_componentes_clean2 %>% 
+     group_by(asignatura, idioma) %>% 
+     tally() %>%
+     ungroup() %>% 
+     arrange(desc(n)) %>% 
+     gt() %>% 
+     cols_label(
+          asignatura = "Asignatura",
+          idioma = "Idioma",
+          n = "Monografías<br>realizadas",
+          .fn = md) %>%
+     cols_align(align = "left",columns = 1:2) %>% 
+     cols_align(align = "center",columns = 3) %>% 
+     fmt_number(columns = where(is.numeric), decimals = 0) %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()
+     ) %>% 
+     gt_theme_pff()
+tabla_monografias
+```
+
+La mayoría de los trabajos de monografía (39 de 53) estuvieron en los niveles B y C de calificación lo que corresponde a niveles satisfactorios para estos trabajos ( @fig-monografias ). Sin embargo, de las monografías presentadas, 13 de ellas tuvieron calificación D, un 18% más que las que obtuvieron la misma calificación en la convocatoria de noviembre 2022. Mientras que en 2022, seis estudiantes tuvieron la mayor calificación (A) en su trabajo, para 2023 solo un candidato alcanzó esta distinción (ver @tbl-mejormonografia-variacion). Ninguno de nuestros estudiantes, al igual que en 2022, obtuvo la menor calificación en este componente (E), que excluye a los alumnos de la obtención del Diploma.
+
+La @tbl-mejormonografia-variacion muestra también los datos relacionados con calificaciones de la monografia para 2022 y 2023, junto con la variación entre estos dos años.
+
+```{r}
+#| label: fig-monografias
+#| fig-cap: "Calificación Monografías - Mayo 2023"
+#| fig-subcap: 
+#|   - "Distribución calificación Monografías"
+#|   - "Puntos ajustados de Monografía por asignaturas"
+#| layout-ncol: 2
+
+
+calificacion_monografias <- notas_componentes_clean2 %>% 
+     mutate(calificacion = factor(calificacion, levels = c("A", "B", "C", "D", "E"))) %>% 
+     group_by(calificacion) %>% 
+     summarise(estudiantes = n()) %>% 
+     ungroup() %>% 
+     ggplot(aes(x = calificacion, y = estudiantes)) +
+     geom_bar(stat = "identity", fill = "aquamarine3") +
+     geom_text(aes(label = estudiantes), size = 6, vjust = 1.4, colour = "black") +
+     labs(x = "Calificación", y = "Número de estudiantes") +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.text = element_text(family = "sans", face="bold", color = "black", size = 14),
+           legend.title = element_blank(),
+           legend.position = "bottom")
+
+calificacion_monografias
+
+### Distribucion Puntos Monografías
+puntos_monografias <- notas_componentes %>% 
+     clean_names() %>% 
+     select(10, 3,4,6,16) %>% 
+     filter(nivel == "Monografía") %>%
+     mutate(asignatura = as_factor(asignatura)) %>% 
+     ggplot(aes(fct_reorder(asignatura, puntuacion_total_ajustada_de_la_asignatura,
+                            .fun = median),
+                puntuacion_total_ajustada_de_la_asignatura)) +
+     geom_boxplot(alpha = 0.2, outlier.shape=NA) +
+     geom_point(aes(fill = idioma, color = idioma), position = position_jitterdodge(jitter.width = 0.8,
+                                                                    dodge.width = 0.8),
+                size = 1.8, alpha = 0.80) + 
+
+
+     geom_hline(yintercept = 27, linetype = "dashed", color = "coral", size = 1) +
+     annotate(geom = "text", x = 8.5, y = 28, label = "Calificación A", hjust = 0,
+              size = 3, fontface = "bold", color ="black") +
+     geom_hline(yintercept = 14, linetype = "dashed", color = "lightgreen", size = 1) +
+     annotate(geom = "text", x = 8.5, y = 4, label = "Calificación C", hjust = 0,
+              size = 3, fontface = "bold", color ="black") +
+     scale_y_continuous(limits = c(0,40), n.breaks = 10) +
+     labs(y = "Calificación Moderada") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     coord_flip() +
+     theme(axis.title.y = element_blank(),
+           axis.title.x = element_text(family = "sans", face ="bold", color = "black", size = 10),
+           axis.text = element_text(family = "sans", face ="bold", color = "black", size = 9),
+           legend.title = element_blank(),
+           legend.position = "bottom",
+           #text = element_text(family = "sans", face = "bold", color = "black", size = 10)
+     )
+puntos_monografias
+```
+
+```{r}
+#| label: tbl-mejormonografia-variacion
+#| tbl-cap: "Mejores trabajos de Monografía 2023 - Variación de resultados Monografía 2022-2023"
+#| tbl-subcap: 
+#|   - "Mejores monografías 2023"
+#|   - "Variación porcentual de calificación de la monografía"
+
+mejores_monografias <- notas_componentes_clean2 %>% 
+     arrange(desc(puntuacion_total), calificacion) %>% 
+     head(10) %>% 
+     gt() %>% 
+     cols_label(
+          asignatura = "Asignatura",
+          idioma = "Idioma",
+          nombre = "Estudiante",
+          puntuacion_total = "Puntuación",
+          calificacion = "Calificación") %>%
+     cols_align(align = "left",columns = everything()) %>% 
+     tab_header(title = md("**Los 10 mejores trabajos de Monografía - Mayo 2023**")) %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black", size = 10),
+          locations = cells_column_labels()
+     ) %>% 
+     tab_style(
+          style = cell_text(color = "black", size = 9),
+          locations = cells_body()) %>% 
+     tab_options(table.font.size = 12,
+                 heading.align = 'left',
+                 heading.title.font.size = 16, heading.title.font.weight = "bold")
+
+mejores_monografias
+
+# Variacion Monografías
+monografias22_23 <- read_delim("monografias.csv", 
+                               delim = "\t", escape_double = FALSE, 
+                               trim_ws = TRUE)
+
+distribucion_notas_monografias22_23 <- monografias22_23 %>% 
+     clean_names() %>% 
+     pivot_longer(cols = starts_with("x"), names_to = "año", values_to = "monografias") %>% 
+     group_by(calificacion, año) %>% 
+     summarise(total_trabajos = sum(monografias), .groups = "drop") %>% 
+     mutate(porcentaje = total_trabajos/sum(total_trabajos)) %>% 
+     select(calificacion, año, porcentaje) %>% 
+     pivot_wider(names_from = año, values_from = porcentaje) %>% 
+     mutate(variacion = (x2023 - x2022)/(x2022)) 
+
+variacion_monografias <- distribucion_notas_monografias22_23 %>% 
+     gt() %>% 
+     cols_label(
+          calificacion = "Calificacion",
+          x2022 = "Nov 2022",
+          x2023 = "May 2023",
+          variacion = "Variación") %>%
+     cols_align(align = "left",columns = everything()) %>% 
+     fmt_percent(columns = where(is.numeric), decimals = 1) %>% 
+     sub_missing(columns = everything(),rows = everything(),
+                 missing_text = "----") %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()
+     ) %>% 
+     tab_options(table.font.size = 12,
+                 heading.align = 'left', heading.title.font.size = px(16)) %>% 
+     gt_theme_pff()
+     
+variacion_monografias
+```
+
+Se presentó un aumento significativo en la obtención de la calificación B , con una variación positiva del 70%. De la misma manera, la calificación C muestra una disminución en el porcentaje de trabajos calificados entre las dos convocatorias, con una variación negativa del 35.3%. Sin embargo, la calificación A muestra una disminución aún más pronunciada en el porcentaje de trabajos entre las dos convocatorias, con una variación negativa del 83.3%. Mientras que en 2022, seis estudiantes (de un total de 61) alcanzaron la mejor calificación, en 2023 solo uno de 53 la alcanzó.
+
+Finalmente, se evidencia un pequeño aumento en el porcentaje de observaciones para la calificación D entre los años 2022 y 2023, con una variación positiva del 18.2%.
+
+::: callout-important
+Es **fundamental** trabajar en el acompañamiento a los estudiantes del Diploma en la elaboración de su tabajo de monografía. La **comprensión**, no solo de los criterios de evaluación, sino de los elementos que se requieren para el desarrollo del trabajo, implica una capacitación constante por parte de los profesores y supervisores.
+:::
+
+#### 2.5.2 Teoría del Conocimiento
+
+En el caso de TdC, el desempeño de los estudiantes fue similar a los reultados de 2022, con algunas mejoras puntuales en la banda de calificación ( @fig-calificacion-tdc ). Al igual que en 2022, seis estudiantes obtuvieron las calificaciones más altas del curso (A y B). No obstante, en 2023, hubo una mayor proporción de estudiantes que alcanzaron el nivel C de calificación (un aumento del 17% de estudiantes), lo que en últimas significó una reducción del porcentaje de estudiantes que obtuvieron los niveles más bajos de evaluación (D y E). Para esta convocatoria, la proporción de estudiantes que obtuvo calificación D bajó del 22 al 12 por ciento; y en esta ocasión ningun estudiante obtuvo la menor calificación (E), que es excluyente de obtención del programa ( ver @tbl-variacion-tdc ).
+
+```{r}
+#| label: fig-calificacion-tdc
+#| fig-cap: "Calificaciones finales TdC - Mayo 2023"
+
+### Teoría del Conocimiento 
+notas_componentes_clean3 <- read_csv("notas_componentes_clean3.csv", 
+    col_types = cols(calificacion = col_factor(levels = c("A", 
+        "B", "C", "D", "E"))))
+
+notas_componentes_clean3 %>% 
+  distinct(nombre, asignatura, calificacion) |> 
+     mutate(calificacion = factor(calificacion, levels = c("A", "B", "C", "D", "E"))) %>% 
+     group_by(calificacion) %>% 
+     summarise(estudiantes = n()) %>% 
+     ungroup() %>% 
+     ggplot(aes(x = calificacion, y = estudiantes)) +
+     geom_bar(stat = "identity", fill = "burlywood1") +
+     geom_text(aes(label = estudiantes), size = 3.5, vjust = 1.4, colour = "black", fontface = "bold") +
+     labs(x = "Calificación", y = "Número de estudiantes") +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.text = element_text(family = "sans", face="bold", color = "black", size = 12),
+           legend.title = element_blank(),
+           legend.position = "bottom")
+
+```
+
+```{r}
+#| label: tbl-variacion-tdc
+#| tbl-cap: "Variación resultados TdC 2022 -2023"
+
+tdc_22_23 <- read_delim("variacion_tdc.csv", 
+                            delim = "\t", escape_double = FALSE, 
+                            trim_ws = TRUE)
+
+variacion_tdc_22_23 <- tdc_22_23 |> 
+     pivot_longer(cols = starts_with("y"), names_to = "año",
+                  values_to = "estudiantes") |> 
+     group_by(calificacion, año) %>% 
+     summarise(total_trabajos = sum(estudiantes), .groups = "drop") %>% 
+     mutate(porcentaje = total_trabajos/sum(total_trabajos)) %>% 
+     select(calificacion, año, porcentaje) %>% 
+     pivot_wider(names_from = año, values_from = porcentaje) %>% 
+     mutate(variacion = (y2023 - y2022)/(y2022)) |> 
+     gt() %>% 
+     cols_label(
+          calificacion = "Calificacion",
+          y2022 = "Nov 2022",
+          y2023 = "May 2023",
+          variacion = "Variación") %>%
+     cols_align(align = "left",columns = everything()) %>% 
+     fmt_percent(columns = where(is.numeric), decimals = 1) %>% 
+     sub_missing(columns = everything(),rows = everything(),
+                 missing_text = "----") %>% 
+     tab_style(
+          style = cell_text(weight = "bold", color = "black"),
+          locations = cells_column_labels()
+     ) %>% 
+     tab_options(table.font.size = 12,
+                 heading.align = 'left', heading.title.font.size = px(16)) %>% 
+     gt_theme_pff()
+
+variacion_tdc_22_23
+```
+
+### 2.6 Comparación notas predichas y notas obtenidas por asignatura
+
+Finalmente en este reporte, se presenta la comparación de las notas obtenidas por los estudiantes en cada asignatura y las notas predichas por los profesores, de la misma manera, se presenta la distribución de las calificaciones moderadas (otorgadas por examinadores externos) par los trabajos internos en cada asignatura.
+
+La comparación entre notas previstas y notas obtenidas es importante porque establece qué tan precisos son nuestros maestros en establecer los niveles de alcance de sus estudiantes, y que tanto pueden determinar -dados los descriptores de calificación de cada asignatura- cuales son las habilidades que los estudiantes pueden lograr en el transcurso del programa. Se establece en la @fig-prevista-obtenida la nota prevista y la nota obtenida por asignatura por cada estudiante. Si la nota prevista y la obtenida fueron equivalentes (precisión total por parte del profesor de la asignatura) las notas estarán sobre la línea diagonal. Si la nota obtenida es mayor que la nota predicha (predicción por debajo de la nota final), los alumnos se encontrarán por encima de la línea diagonal, y sucederá lo contrario si la nota obtenida es inferior a la nota prevista.
+
+Las notas finales de asignatura son variables discretas (niveles de calificación de 1 a 7 que describen cada uno de ellos un conjunto de atributos alcanzados por los estudiantes. Ver [Descriptores de Calificación Programa del Diploma](/Users/JorgeEd/OneDrive%20-%20Gimnasio%20Colombo%20Británico/Descriptores%20de%20calificaciones%20finales%20del%20Programa%20del%20Diploma.pdf) ), por lo que para mejorar la visualización se agrega un ruido aleatorio a la nota de cada estudiante con el fin de separar los resultados que se solapan entre sí.
+
+```{r}
+#| label: funcion para el desarrollo de los gráficos comparando nota prevista y obtenida
+
+resultados_asignaturas_2023 <- read_csv("resultados_asignaturas_2023.csv")
+
+gg1 <- c("ESPAÑOL A Literatura")
+gg2 <- c("INGLÉS B", "FRANCÉS AB.")
+gg3 <- c("POLÍTICA GLOBAL", "HISTORIA")
+gg4 <- c("FÍSICA", "QUÍMICA")
+gg4_b <- c("BIOLOGÍA",  "COMPUTER SCIENCE")
+gg5 <- c("MATEMÁTICAS: ANÁLISIS")
+
+predicha_obtenida_asignaturas <- resultados_asignaturas_2023  %>% 
+     clean_names() %>%
+     mutate(asignatura = if_else(asignatura == "INFORMÁTICA", 
+                                 "COMPUTER SCIENCE", asignatura)) %>% 
+     filter(nivel != "Monografía" & nivel != "TdC") %>% 
+     select(nombre, asignatura, nivel, calificacion_prevista, calificacion) 
+
+plot_predicha_vs_obtenida <- function(data, GRUPO) {
+     data %>%
+          filter(asignatura %in% GRUPO) %>%
+          ggplot(aes(x = calificacion_prevista, y = calificacion, 
+                     color = nivel, shape = asignatura)) +
+          geom_jitter(width = 0.5, height = 0.5, size = 3) +
+          geom_abline(intercept = 0, slope = 1, color = "purple", linetype = "solid") +
+          labs(x = "Nota prevista", y = "Nota obtenida") +
+          theme_minimal() +
+          scale_color_brewer(palette = "Dark2") +
+          theme(
+               axis.title = element_text(face = "bold"),
+               axis.text = element_text(face = "bold"),
+               legend.position = "bottom",
+               legend.title = element_blank(),
+               plot.title = element_text(face = "bold", family = "sans", size = 13)
+          )
+}
+```
+
+```{r}
+#| label: fig-prevista-obtenida
+#| fig-cap: "Comparación nota prevista vs. nota obtenida Diploma IB 2023"
+#| fig-subcap: 
+#|   - "Grupo 1: Estudios de Lengua y Literatura"
+#|   - "Grupo 2: Adquisición de Lenguas"
+#|   - "Grupo 3: Individuos y Sociedades"
+#|   - "Grupo 4: Ciencias: Física y Química"
+#|   - "Grupo 4: Ciencias: Biología y Computer Science"
+#|   - "Grupo 5: Matemáticas"
+#| layout-ncol: 2
+#| layout-nrow: 3
+
+plot_predicha_vs_obtenida(predicha_obtenida_asignaturas, gg1)
+plot_predicha_vs_obtenida(predicha_obtenida_asignaturas, gg2)
+plot_predicha_vs_obtenida(predicha_obtenida_asignaturas, gg3)
+plot_predicha_vs_obtenida(predicha_obtenida_asignaturas, gg4)
+plot_predicha_vs_obtenida(predicha_obtenida_asignaturas, gg4_b)
+plot_predicha_vs_obtenida(predicha_obtenida_asignaturas, gg5)
+```
+
+Se observa que para la convocatoria de 2023 las asignaturas de Matemáticas y Física fueron en las que hubo una mayor precisión en la calificación prevista frente a la obtenida por los estudiantes ( @fig-diferencia-previstaobtenida ). Sin embargo, cabe destacar que al igual que en 2022, en la mayoría de los casos, el promedio de las diferencias entre estas calificaciones es inferior a un punto, lo cual es una variación considerada como aceptable y que denota una comprensión de los elementos centrales de los descriptores de calificación del IB, así como un seguimiento al proceso de aprendizaje de los estudiantes que le permite a los profesores dar cuenta de los alcances efectivos de los alumnos en cáda una de las clases.
+
+En el caso de Español A: Literatura y English B, las diferencias muestran que en promedio los profesores predijeron que sus estudiantes estarían en promedio en algo menos de un punto por debajo de la nota obtenida al final por los estudiantes. En el caso de Política Global, ocurre el caso contrario, donde los estudiantes obtuvieron en promedio medio punto por debajo de lo que se predijo que obtendrían.
+
+Para esta convocatoria se encuentra que en el caso de Química, los estudiantes obtuvieron en promedio un punto completo por debajo de la nota prevista, al igual que en Historia, en la que los cuatro estudiantes que se presentaron como candidatos obtuvieron en promedio un punto y medio menos de lo que se havia previsto que obtuvieran.
+
+```{r}
+#| label: fig-diferencia-previstaobtenida
+#| fig-cap: "Diferencias promedio entre nota obtenida y nota prevista por asignatura - Mayo 2023"
+### Diferencias previstas y obtenidas
+
+predicha_obtenida_asignaturas %>% 
+     mutate(asignatura = as_factor(asignatura),
+            calificacion = as.numeric(calificacion),
+            calificacion_prevista = as.numeric(calificacion_prevista)) %>% 
+     mutate(diferencia = calificacion - calificacion_prevista) %>% 
+     group_by(asignatura) %>% 
+     summarize(promedio_diferencia = mean(diferencia)) %>% 
+     ungroup() %>% 
+     ggplot(aes(fct_reorder(asignatura, promedio_diferencia), promedio_diferencia, fill = asignatura)) +
+     geom_col() +
+     geom_text(aes(label = round(promedio_diferencia, 2)), size = 4,
+               vjust = 1, hjust = 0.35, colour = "black") +
+     geom_hline(yintercept = 0) +
+     coord_flip() +
+     labs(y = "Puntos promedio de diferencia") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.y = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "none",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+```
+
+::: callout-tip
+Es importante que los departamentos utilicen los atributos establecidos en los [Descriptores de Calificación Programa del Diploma](/Users/JorgeEd/OneDrive%20-%20Gimnasio%20Colombo%20Británico/Descriptores%20de%20calificaciones%20finales%20del%20Programa%20del%20Diploma.pdf) para el diseño de desempeños e instrumentos de evaluación. Los descriptores indican lo que se espera que el estudiante sea capaz de alcanzar a lo largo del Programa. La lectura y análisis de estos descriptores con los estudiantes, más el ejemplo pedadógico de cómo estos atributos se transforman en elementos prácticos dentro del salón de clase, permite una **comprensión** mucho más efectiva de la conexión entre el currículo enseñado y el currículo evaluado del Diploma.
+:::
+
+#### 2.6.2 Resultados trabajos internos.
+
+En la @fig-trabajosinternos se encuentra la distribución de puntos (marcas) obtenidas en los **trabajos internos** realizados en cada una de las asignaturas de la convocatoria de 2023. Es importante recordar que los trabajos internos son realizados durante el desarrollo del programa y son **calificados** por los profesores del colegio pero **moderados** externamente.
+
+Esto quiere decir que examinadores externos evaluan una **muestra aleatoria** de los trabajos y con base en una evaluación estandarizada realizada por un equipo de calificación (Ver [T](https://gcbedu-my.sharepoint.com/:w:/g/personal/jorge_baquero_gcb_edu_co/ERPkujLt3cxOmSvqGgB_nZkBO3CTetFTRnR0So4bU0VZAw?e=a7stXi)[rabajos Internos en el IB](https://gcbedu-my.sharepoint.com/:b:/g/personal/jorge_baquero_gcb_edu_co/EVuAFyiF1sxKgPkM42pP3coBNUqCyVD0jUB2mELz2BWs0w?e=FBcclx)).
+
+```{r}
+#| label: fig-trabajosinternos
+#| fig-cap: "Distribución de calificación de trabajos internos por asignaturas"
+#| fig-subcap: 
+#|   - "Grupo 1: Estudios de Lengua y Literatura"
+#|   - "Grupo 2: Adquisición de Lenguas"
+#|   - "Grupo 3: Individuos y Sociedades" 
+#|   - "Grupos 4 y 5: Ciencias y Matemáticas"
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+#| layout-ncol: 2
+notas_TI <- notas_componentes %>% 
+     clean_names() %>% 
+     select(10,3,5,13,15) %>% 
+     mutate(asignatura = ifelse(asignatura == "MATEMÁTICAS: ANÁLISIS Y ENFOQUES", 
+                                "MATEMÁTICAS", asignatura)) %>% 
+     mutate(across(all_of(c("asignatura", "componente")), as.factor)) %>% 
+     filter(!str_detect(componente, "PRUEBA")) %>% 
+     filter(componente != "MONOGRAFÍA" & componente != "TEORÍA DEL CONOCIMIENTO")
+
+### anotaciones
+rango_esp1<- "Puntos máximos del Ensayo NS"
+rango_esp2<- "Puntos máximos de EOI"
+rango_eng <- "Puntos máximos de EOI"
+rango_gp_his1 <- "Puntos máximos TI y Extensión Oral GP"
+rango_gp_his2 <- "Puntos máximos TI Historia"
+rango_cien1 <- "Puntos máximos TI Ciencias (B,Q,M)"
+rango_cien2 <- "Puntos máximos TI Computer Science"
+rango_mat <- "Puntos máximos TI Matemáticas" 
+
+español_TI  <-notas_TI %>% 
+     filter(str_detect(asignatura, "ESPAÑOL")) %>% 
+     ggplot(aes(asignatura, calificacion_moderada, fill = componente)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     geom_hline(yintercept = 20, linetype = "dashed", color = "lightgreen", size = 1.25) + 
+     geom_hline(yintercept = 40, linetype = "dashed", color = "coral", size = 1.25) +
+     annotate(geom = "text", x = 0.2, y = 21, label = rango_esp1, hjust = 0,
+              size = 2.5, color ="black", fontface = "bold") + 
+     annotate(geom = "text", x = 0.2, y = 39, label = rango_esp2, hjust = 0,
+              size = 2.5, color ="black", fontface = "bold") + 
+     scale_y_continuous(limits = c(0,42), n.breaks = 5) +
+     labs(y = "Calificación Moderada") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "bottom",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+
+english_frances_TI <- notas_TI %>% 
+     filter(str_detect(asignatura, "INGLÉS|FRANCÉS")) %>% 
+     ggplot(aes(asignatura, calificacion_moderada, fill = asignatura)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     geom_hline(yintercept = 30, linetype = "dashed", color = "coral", size = 1.25) +
+     annotate(geom = "text", x = 0.2, y = 31, label = rango_esp2, hjust = 0,
+              size = 3, fontface = "bold", color ="black") + 
+     scale_y_continuous(limits = c(0,35), n.breaks = 5) +
+     labs(y = "Calificación Moderada") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "none",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+
+global_historia_TI <- notas_TI %>% 
+     filter(str_detect(asignatura, "POLÍTICA|HISTORIA")) %>% 
+     ggplot(aes(asignatura, calificacion_moderada, fill = asignatura, shape = componente)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(aes(fill = componente, color = componente), position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                size = 1.8, alpha = 0.80) +
+     geom_hline(yintercept = 20, linetype = "dashed", color = "coral", size = 1.25) +
+     geom_hline(yintercept = 25, linetype = "dashed", color = "lightgreen", size = 1.25) +
+     annotate(geom = "text", x = 0.2, y = 21, label = rango_gp_his1, hjust = 0,
+              size = 3, fontface = "bold", color ="black") +
+     annotate(geom = "text", x = 0.2, y = 26, label = rango_gp_his2, hjust = 0,
+              size = 3, fontface = "bold", color ="black") +
+     scale_y_continuous(limits = c(0,30), n.breaks = 5) +
+     labs(y = "Calificación Moderada") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "none",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+
+ciencias_matematicas_TI <- notas_TI %>%
+     filter(str_detect(asignatura, "BIOLOGÍA|FÍSICA|QUÍMICA|INFORMÁTICA|MATEMÁTICAS")) %>%
+     mutate(asignatura = factor(asignatura, levels = c("BIOLOGÍA", "FÍSICA", 
+                                                       "QUÍMICA", "INFORMÁTICA", "MATEMÁTICAS"))) %>% 
+     ggplot(aes(asignatura, calificacion_moderada, fill = asignatura)) +
+     geom_boxplot(alpha = 0.6, outlier.shape=NA) +
+     geom_point(position = position_jitterdodge(jitter.width = 0.8,
+                                                dodge.width = 0.8),
+                color = "brown", size = 1.8, alpha = 0.80) +
+     geom_hline(yintercept = 34, linetype = "dashed", color = "lightgreen", size = 1.25) +
+     annotate(geom = "text", x = 0.2, y = 35, label = rango_cien2, hjust = 0,
+              size = 3, fontface = "bold", color ="black") +
+     geom_hline(yintercept = 24, linetype = "dashed", color = "coral", size = 1.25) +
+     annotate(geom = "text", x = 0.2, y = 21, label = rango_mat, hjust = 0,
+              size = 3, fontface = "bold", color ="black") +
+     geom_hline(yintercept = 20, linetype = "dashed", color = "darkcyan", size = 1.25) +
+     annotate(geom = "text", x = 0.2, y = 25, label = rango_cien1, hjust= 0,
+              size = 3, fontface = "bold", color ="black") +
+     scale_y_continuous(limits = c((min(notas_TI$calificacion_moderada) -1), 35), n.breaks = 5) +
+     labs(y = "Calificación Moderada") + 
+     #scale_fill_viridis_d(alpha = 0.5) +
+     theme_minimal() +
+     theme(axis.title = element_text(family = "sans", face="bold", color = "black"),
+           axis.title.x = element_blank(),
+           axis.text = element_text(family = "sans", face="bold", color = "black"),
+           legend.title = element_blank(),
+           legend.position = "none",
+           text = element_text(family = "sans", face = "bold", color = "black", size = 12)
+     )
+español_TI
+english_frances_TI
+global_historia_TI
+ciencias_matematicas_TI
+```
+
+En general, se observa que en la mayoría de las asignaturas, los trabajos internos estuvieron por debajo de los puntos máximos en cada una de ellas. Se destaca el caso de **English B,** en donde la mayor parte de los estudiantes obtuvo los puntajes más altos, permitiendoles alcanzar los niveles 6 y 7 de calificación en este componente de evaluación. De igual manera, los trabajos internos de **Español**, las notas obtenidas por los estudiantes, aunque presentan una alta dispersión, en general fueron satisfactorias.
+
+Por otro lado, en el caso de **Frances *ab initio***, aunque la nota final de la asignatura fue satisfactoria, la dispersión de los datos en el trabajo interno muestra que hay una disparidad en la capacidad y alcance de los estudiantes en la realización de este trabajo (evaluación oral individual).
+
+Los trabajos internos de la asignatura de **Historia** estuvieron muy por debajo de los resultados esperados y por lo tanto, de los niveles de calificación más altos;, lo que afectó mientras que en el caso de **Política Global**, la mayoría de estudiantes obtuvo resultados por encima de la media en la escala de calificación, lo que les permitió estar en los niveles 4 y 5 de su trabajo interno.
+
+En el caso de las ciencias **Física** tuvo los mejores resultados en el desarrollo de su trabajo de investigación, si bien la dispersión de las calificaciones es amplia y requiere una mejora en el proceso de calificación y estandarización. Los resultados promedio de los trabajos de **Computer Science** presentaron una amplia disparidad, y estuvieron en promedio 15 puntos por debajo del máximo de 34, lo que influyó a que no se obtuvieran mejores notas en la clase.
+
+Finalmente, **Matemáticas** y **Química** presentaron los resultados más bajos en sus trabajos internos. En el primer caso, las investigaciones presentadas estuvieron casi 10 puntos por debajo del máximo de 24, lo que terminó por hacer que los estudiantes obtuvieran calificaciones en los niveles 2 y 3 (de un máximo de 7) para este componente.
+
+Aunque hubo estudiantes que obtuvieron muy buenas calificaciones en el trabajo interno de matemáticas, la dispersión de los puntos obtenidos indica una amplia variabilidad en la comprensión, la investigación y la ejecución de este trabajo.
+
+::: callout-warning
+Es fundamental que se revisen los procesos de planeación y práctica pedagógica que se desarrollen para la realización de los **trabajos internos**. Es necesario que se haga énfasis en la comprensión de sus objetivos y criterios de evaluación. Dentro de la planeación debe plantearse no solo la presentación y el trabajo individual en la realización de los trabajos, sino que debe haber una **modelación estricta** y un **acompañamiento eficaz** en cada asignatura para la realización de este componente.
+
+Los departamentos deben hacer visibles estratégias pedagógicas para una calificación más precisa de cada uno de los criterios establecidos para los trabajos internos en cada asignatura. Por ejemplo, utilizar los criterios de evaluación para diseñar instrumentos (desempeños) que permitan a los estudiantes comprender los requerimientos en cada uno de ellos, y a los profesores, ejercitar su capacidad de calificación.
+:::

@@ -1,0 +1,865 @@
+codigo,estudiante,sexo,TdC,EE,puntos_adicionales,puntos_totales,Diploma,resultado,asignatura,nota
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,english_nm,7
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,global_ns,6
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,física_ns,3
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,comp_science_nm,4
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0001 (knd670),"ACEVEDO DAZA, PAULA ANDREA",F,C,D,0,28,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,química_ns,3
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,biología_ns,5
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,matemáticas_nm,4
+061156-0002 (knd671),"ÁLVAREZ ÁLVAREZ, GABRIELA",F,B,C,2,30,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,español_nm,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,español_ns,5
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,english_nm,5
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,english_ns,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,francés_ab,3
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,global_ns,4
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,química_ns,2
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,3
+061156-0003 (knd672),"BERMUDEZ, PABLO MIGUEL",M,D,C,0,22,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,español_nm,4
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,global_ns,4
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,física_nm,4
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,comp_science_nm,4
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0005 (knd675),"CÁRDENAS LÓPEZ, MATEO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,francés_ab,6
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0006 (knd676),"CARRASCAL DUARTE, SOFIA",F,B,C,2,29,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,español_nm,7
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,english_ns,7
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,history_nm,4
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,física_ns,6
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,comp_science_nm,6
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0007 (knd677),"CARRILLO, MARÍA ALEJANDRA",F,B,D,0,35,SI,Diploma bilingüe otorgado,matemáticas_ns,5
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,español_nm,4
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,español_ns,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,english_nm,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,english_ns,5
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,francés_ab,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,global_ns,4
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,química_nm,2
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,química_ns,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,biología_ns,3
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,2
+061156-0008 (knd678),"CASTILLO, ALEJANDRO",M,C,D,0,20,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,español_nm,4
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,global_nm,4
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,física_ns,3
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0010 (knd680),"CASTRO HERNANDEZ, RAFAEL DAVID",M,C,C,1,27,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,francés_ab,6
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,química_ns,3
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0009 (knd679),"CASTRO TIRADO, DAVID",M,C,B,2,31,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_nm,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_ns,5
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_nm,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_ns,5
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,francés_ab,4
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_ns,4
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_nm,2
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_ns,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,3
+061156-0011 (knd681),"CEPEDA OTÁLORA, LAURA SOFÍA",F,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,español_nm,7
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,física_nm,4
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,biología_ns,4
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0012 (knd682),"COCONUBO SANTAMARÍA, MARIA CAMILA",F,C,B,2,32,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,english_nm,6
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,francés_ab,4
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,global_ns,4
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,química_ns,3
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,matemáticas_nm,4
+061156-0014 (knd684),"CUERVO, MARÍA JOSÉ",F,C,C,1,27,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,english_ns,5
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,francés_ab,4
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,global_ns,4
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,química_nm,3
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,matemáticas_nm,4
+061156-0015 (knd685),"DIAZGRANADOS, DANIEL",M,D,B,1,26,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,english_ns,5
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0016 (knd686),"ESCOBAR SOTO, MARIANA",F,D,C,0,25,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,english_nm,5
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,global_ns,4
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,biología_ns,4
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0018 (knd688),"FERNANDEZ, MARIA CAMILA",F,D,B,1,24,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,español_ns,6
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,física_nm,3
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0020 (knd690),"GARCIA BETANCUR, TOMAS",M,C,C,1,29,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,global_nm,4
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,física_ns,3
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,comp_science_nm,3
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0019 (knd689),"GARCÍA CASTRO, DAVID ALEJANDRO",M,C,B,2,26,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,español_nm,4
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,biología_ns,3
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0023 (knd693),"GÓMEZ HERRERA, MARIA CAMILA",M,C,B,2,25,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_nm,5
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_ns,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_nm,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_ns,5
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,francés_ab,4
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_nm,4
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_ns,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_ns,3
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_ns,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,NA
+061156-0022 (knd692),"GOMEZ MUÑOZ, JUAN JOSÉ",F,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,2
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,francés_ab,4
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,física_nm,3
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0026 (knd698),"GONZÁLEZ GUZMÁN, MARIA PAULA",M,D,C,0,27,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,español_ns,4
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,english_nm,6
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,global_nm,4
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,física_ns,4
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,comp_science_nm,3
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0025 (knd695),"GONZÁLEZ VILLARREAL, JUAN DIEGO",F,D,B,1,26,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_nm,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_ns,5
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_nm,5
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_ns,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,francés_ab,4
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_ns,4
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_ns,2
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,3
+061156-0027 (knd702),"GUZMAN PEÑA, SANTIAGO",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_nm,7
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_ns,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_nm,6
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_ns,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,francés_ab,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_nm,6
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_ns,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,history_nm,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_nm,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_ns,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_nm,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_ns,3
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,biología_ns,5
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,comp_science_nm,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_nm,NA
+061156-0028 (knd703),"LANDEIRA QUEIROZ, MARIA LUISA",F,C,B,2,32,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_ns,3
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,español_nm,4
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,english_ns,5
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,física_nm,3
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0029 (knd704),"LOZANO SÁNCHEZ, CAMILO ANDRÉS",M,D,C,0,25,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0031 (knd706),"MARIN URIBE, JUANITA",F,C,D,0,26,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_nm,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_ns,5
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_nm,6
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_ns,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,francés_ab,5
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_nm,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_ns,4
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,history_nm,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_nm,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_ns,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_nm,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_ns,2
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,biología_ns,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,comp_science_nm,NA
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_nm,3
+061156-0033 (knd708),"MUÑOZ SUAREZ, SAMUEL",M,C,D,0,25,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_ns,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,física_nm,4
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0034 (knd709),"OJEDA RODRIGUEZ, MARIANA",F,C,C,1,30,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,english_nm,6
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,global_nm,4
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,química_ns,3
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,biología_ns,4
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,matemáticas_nm,4
+061156-0036 (knd712),"ORTEGA MARTINEZ, MARIA JULIANA",F,B,B,2,28,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,química_ns,3
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,biología_ns,5
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,matemáticas_nm,5
+061156-0037 (knd713),"PATIÑO LOZANO, ANA SOFÍA",F,C,C,1,31,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,francés_ab,4
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,química_nm,3
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0039 (knd715),"PENAGOS GRANADOS, MARÍA JOSÉ",M,C,D,0,26,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,history_nm,3
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,física_ns,5
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,comp_science_nm,4
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0038 (knd714),"PEÑA AMAYA, RICARDO ENRIQUE",F,C,C,1,29,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,francés_ab,6
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,física_ns,3
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0041 (knd717),"PINO ROZO, DAVID",M,C,A,2,31,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,english_nm,6
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,química_ns,3
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,biología_ns,4
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,matemáticas_nm,4
+061156-0042 (knd729),"PRIETO LÓPEZ, ISABELLA",F,C,C,1,28,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,español_nm,5.0476190476190474
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,español_ns,4.642857142857143
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,english_nm,5.2727272727272725
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,english_ns,5.541666666666667
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,francés_ab,4.421052631578948
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,global_nm,4.25
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,global_ns,4.380952380952381
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,history_nm,2.3333333333333335
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,física_nm,3
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,física_ns,3.3333333333333335
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,química_nm,2
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,química_ns,2.4545454545454546
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,biología_ns,3.7
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,comp_science_nm,3.4285714285714284
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,matemáticas_nm,3.1666666666666665
+NA,Promedio Asignatura GCB,M,NA,NA,NA,NA,NA,NA,matemáticas_ns,3.176470588235294
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_nm,5
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_ns,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_nm,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_ns,6
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,francés_ab,6
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_nm,5
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_ns,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,history_nm,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_nm,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_ns,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_nm,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_ns,2
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,biología_ns,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,comp_science_nm,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_nm,NA
+061156-0043 (knd732),"RAMIREZ ZORRO, ALEJANDRO",M,D,B,1,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_ns,2
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_nm,6
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_ns,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_nm,6
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_ns,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,francés_ab,5
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_nm,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_ns,5
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,history_nm,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_nm,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_ns,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_nm,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_ns,2
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,biología_ns,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,comp_science_nm,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_nm,NA
+061156-0045 (knd734),"RODRIGUEZ, JULIAN ANDRÉS",F,C,C,1,28,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_ns,3
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,español_nm,7
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,global_ns,6
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,history_nm,4
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,física_nm,5
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0046 (knd735),"RODRIGUEZ, MARIA PAULA",M,C,C,1,33,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,english_nm,7
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,física_ns,6
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,química_ns,4
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0048 (knd737),"ROJAS BARRAGÁN, SEBASTIAN",M,C,B,2,34,SI,Diploma bilingüe otorgado,matemáticas_ns,5
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,español_ns,4
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,francés_ab,4
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,global_ns,4
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,física_nm,3
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0047 (knd736),"ROJAS BARRIOS, JUAN SEBASTIÁN",F,C,C,1,25,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,química_ns,4
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,biología_ns,5
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,matemáticas_nm,5
+061156-0049 (knd738),"ROQUE MATTA, LAURA CAMILA",M,C,B,2,32,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,english_ns,7
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,francés_ab,6
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,química_nm,3
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0051 (knd740),"RUEDA LÓPEZ, CARLOS MARIO",M,C,B,2,33,SI,Diploma bilingüe otorgado,matemáticas_ns,4
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,español_nm,5
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,english_nm,6
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,english_ns,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,global_ns,6
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,física_ns,5
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,comp_science_nm,5
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0052 (knd741),"RUIZ ARAGÓN, RAÚL SEBASTIÁN",M,C,C,1,33,SI,Diploma bilingüe otorgado,matemáticas_ns,5
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,español_nm,4
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,español_ns,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,english_nm,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,english_ns,6
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,francés_ab,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,global_nm,4
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,global_ns,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,química_ns,1
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,biología_ns,3
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,3
+061156-0053 (knd747),"SAAVEDRA, JUAN CAMILO",F,D,D,0,21,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,global_nm,6
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,química_nm,3
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0055 (knd749),"TACHACK ECHEVERRY, LUCIA",M,C,B,2,30,SI,Diploma bilingüe otorgado,matemáticas_ns,3
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_nm,5
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_ns,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_nm,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_ns,5
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,francés_ab,5
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_nm,5
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_ns,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,history_nm,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_nm,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_ns,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_nm,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_ns,2
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,biología_ns,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,comp_science_nm,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_nm,NA
+061156-0057 (knd752),"TORRES MEDINA, JUAN ESTEBAN",M,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_ns,3
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,español_nm,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,español_ns,4
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,english_nm,5
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,english_ns,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,francés_ab,4
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,global_ns,5
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,química_ns,2
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,3
+061156-0056 (knd750),"TORRES, ALEJANDRO",M,D,C,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,español_nm,3
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,español_ns,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,english_nm,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,english_ns,5
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,francés_ab,3
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,global_ns,4
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,física_nm,3
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,química_ns,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,NA
+061156-0058 (knd753),"TRIVIÑO MARTINEZ, DANIEL",F,D,C,0,20,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,2
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_nm,4
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_ns,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_nm,6
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_ns,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,francés_ab,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_ns,4
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,history_nm,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_ns,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_ns,2
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,biología_ns,4
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,NA
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,3
+061156-0059 (knd754),"TUSSO PÉREZ, MARIANA",M,C,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_nm,4
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,español_ns,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_nm,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,english_ns,6
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,francés_ab,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_nm,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,global_ns,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,history_nm,3
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_nm,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,física_ns,4
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_nm,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,química_ns,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,biología_ns,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,comp_science_nm,3
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_nm,NA
+061156-0060 (knd755),"ULLOA, JUAN DAVID",M,D,D,0,23,NO,La puntuación total no alcanza 24 puntos.,matemáticas_ns,3
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,español_nm,6
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,español_ns,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,english_ns,7
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,francés_ab,7
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,física_ns,5
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,química_nm,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0061 (knd757),"URIBE, JUAN DAVID",M,A,B,3,38,SI,Diploma bilingüe otorgado,matemáticas_ns,5
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,matemáticas_nm,3
+061156-0062 (knd758),"VARGAS URBINA, JUAN CAMILO",F,C,D,0,26,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,francés_ab,5
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,global_nm,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,global_ns,5
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,comp_science_nm,NA
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,matemáticas_nm,4
+061156-0063 (knd759),"VARGAS VACCA, LUNA VALERIA",M,C,C,1,28,SI,Diploma bilingüe otorgado,matemáticas_ns,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_nm,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,español_ns,5
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_nm,6
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,english_ns,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,francés_ab,5
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_nm,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,global_ns,4
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,history_nm,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_nm,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,física_ns,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_nm,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,química_ns,2
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,biología_ns,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,comp_science_nm,NA
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_nm,3
+061156-0064 (knd760),"VEGA RODRÍGUEZ, JUAN DIEGO",F,C,B,2,27,NO,Se han obtenido menos de 12 puntos en las asignaturas de NS,matemáticas_ns,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,español_nm,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,español_ns,5
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,english_nm,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,english_ns,6
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,francés_ab,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,global_nm,5
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,global_ns,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,history_nm,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,física_nm,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,física_ns,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,química_nm,2
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,química_ns,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,biología_ns,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,comp_science_nm,3
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,matemáticas_nm,NA
+061156-0065 (knd761),"VERU ACUÑA, LAURA ESTEFANIA",F,B,C,2,26,SI,Diploma bilingüe otorgado,matemáticas_ns,3

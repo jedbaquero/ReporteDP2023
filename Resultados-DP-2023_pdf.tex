@@ -1,0 +1,1426 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{longtable}
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Indice de contenidos}
+\else
+  \newcommand\contentsname{Indice de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabla}
+\else
+  \newcommand\tablename{Tabla}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listatdos}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{spanish}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Informe Resultados del Programa del Diploma IB - Convocatoria Mayo 2023},
+  pdfauthor={Jorge Eduardo Baquero C.},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Informe Resultados del Programa del Diploma IB - Convocatoria
+Mayo 2023}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Gimnasio Colombo Británico - Bilingüe Internacional}
+\author{Jorge Eduardo Baquero C.}
+\date{}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, frame hidden, breakable, sharp corners]}{\end{tcolorbox}}\fi
+
+\hypertarget{generalidades-y-poblaciuxf3n}{%
+\subsection{1. Generalidades y
+población}\label{generalidades-y-poblaciuxf3n}}
+
+La session de mayo de 2023 fue la segunda presentación de candidatos del
+GCB que cumplieron con los requisitos dispuestos para el desarrollo del
+programa del Diploma IB durante dos años. Se presentaron 53 candidatos
+que elaboraron en total 424 componentes de evaluación (que incluyen las
+pruebas por cada asignatura, los trabajos internos de cada una de ellas,
+las monografías y los componentes de evaluación de TdC).
+
+En esta convocatoria, de los 53 candidatos, 29 fueron hombres y 24
+mujeres ( Figura~\ref{fig-distribucion-aprobacion-sexo} ). \textbf{37
+estudiantes de los 53 registrados (70\%) obtuvieron el Diploma IB} con
+una media de puntaje para los estudiantes que obtuvieron el Diploma de
+29 puntos La nota promedio de los estudiantes que obtuvieron el Diploma
+fue de 4,60 por asignatura. Este resultado es inferior al obtenido en la
+sesión de noviembre 2022, donde se obtuvo un 74\% de Diplomas otorgados
+y una media de 4,77 por asignatura. La distribución de los estudiantes
+que recibieron el Diploma fue equivalente entre ambos sexos (
+Figura~\ref{fig-distribucion-aprobacion-sexo})
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-aprobacion-sexo-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-aprobacion-sexo-1}Candidatos Diploma
+IB 2023 por sexo}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-aprobacion-sexo-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-aprobacion-sexo-2}Obtención del
+Diploma por sexo}
+\end{minipage}%
+
+\caption{\label{fig-distribucion-aprobacion-sexo}Distribución y
+Aprobación de candidatos por sexo}
+
+\end{figure}
+
+El estudiante que obtuvo el mayor puntaje fue \textbf{Juan David Uribe},
+con 38 puntos totales y el estudiante con la mejor monografía (A -- en
+la asignatura Español A) fue el estudiante \textbf{David Pino Rozo.} De
+los 16 estudiantes que no obtuvieron el Diploma, 6 de ellos obtuvieron
+puntajes superiores a 24 (puntaje mínimo para alcanzarlo) pero
+desafortunadamente no cumplieron con la condición de obtener el mínimo
+de puntos necesarios en sus asignaturas de nivel superior (12 puntos).
+Con ellos, el porcentaje de aprobación del Diploma hubiera sido del
+90\%. Los estudiantes con menores puntajes fueron Alejandro Castillo y
+Daniel Triviño, quienes solo alcanzaron 20 puntos de 45.
+Tabla~\ref{tbl-mejorespuntajes}
+
+\hypertarget{tbl-mejorespuntajes}{}
+\begin{longtable}[]{@{}lllll@{}}
+\caption{\label{tbl-mejorespuntajes}Listado de puntajes obtenidos
+Diploma IB - Mayo 2023)}\tabularnewline
+\toprule()
+Puesto & Estudiante & Puntos Obtenidos & Puntos Adic. & Diploma \\
+\midrule()
+\endfirsthead
+\toprule()
+Puesto & Estudiante & Puntos Obtenidos & Puntos Adic. & Diploma \\
+\midrule()
+\endhead
+1 & URIBE, JUAN DAVID & 38 & 3 & SI \\
+2 & CARRILLO, MARÍA ALEJANDRA & 35 & 0 & SI \\
+3 & ROJAS BARRAGÁN, SEBASTIAN & 34 & 2 & SI \\
+4 & RUEDA LÓPEZ, CARLOS MARIO & 33 & 2 & SI \\
+5 & RODRIGUEZ, MARIA PAULA & 33 & 1 & SI \\
+6 & RUIZ ARAGÓN, RAÚL SEBASTIÁN & 33 & 1 & SI \\
+7 & COCONUBO SANTAMARÍA, MARIA CAMILA & 32 & 2 & SI \\
+8 & LANDEIRA QUEIROZ, MARIA LUISA & 32 & 2 & NO \\
+9 & ROQUE MATTA, LAURA CAMILA & 32 & 2 & SI \\
+10 & CASTRO TIRADO, DAVID & 31 & 2 & SI \\
+11 & PINO ROZO, DAVID & 31 & 2 & SI \\
+12 & PATIÑO LOZANO, ANA SOFÍA & 31 & 1 & SI \\
+13 & ÁLVAREZ ÁLVAREZ, GABRIELA & 30 & 2 & SI \\
+14 & TACHACK ECHEVERRY, LUCIA & 30 & 2 & SI \\
+15 & OJEDA RODRIGUEZ, MARIANA & 30 & 1 & SI \\
+16 & CARRASCAL DUARTE, SOFIA & 29 & 2 & SI \\
+17 & GARCIA BETANCUR, TOMAS & 29 & 1 & SI \\
+18 & PEÑA AMAYA, RICARDO ENRIQUE & 29 & 1 & SI \\
+19 & ORTEGA MARTINEZ, MARIA JULIANA & 28 & 2 & SI \\
+20 & PRIETO LÓPEZ, ISABELLA & 28 & 1 & SI \\
+21 & RODRIGUEZ, JULIAN ANDRÉS & 28 & 1 & NO \\
+22 & VARGAS VACCA, LUNA VALERIA & 28 & 1 & SI \\
+23 & ACEVEDO DAZA, PAULA ANDREA & 28 & 0 & SI \\
+24 & TORRES MEDINA, JUAN ESTEBAN & 27 & 2 & NO \\
+25 & VEGA RODRÍGUEZ, JUAN DIEGO & 27 & 2 & NO \\
+26 & CASTRO HERNANDEZ, RAFAEL DAVID & 27 & 1 & SI \\
+27 & CUERVO, MARÍA JOSÉ & 27 & 1 & SI \\
+\bottomrule()
+\end{longtable}
+
+Por otro lado, los estudiantes atendieron 16 cursos distribuídos como se
+muestra en la Figura~\ref{fig-distribucion-asignaturas} . La mayoría de
+estudiantes se inscribió en Español A: Literatura (Grupo 1) en el nivel
+medio, mientras que la mayoría optó por tomar English B (Grupo 2) y
+Global Politics en el nivel superior pero solo 4 se presentaron como
+candidatos en la materia de History SL (Grupo 3)
+
+En el caso de las ciencias (Grupo 4), los estudiantes debían escoger de
+manera obligatoria entre física y química (aunque se permitió que un
+estudiante tomara ambas\footnote{Sebastián Rojas Barragan, quien obtuvo
+  34 puntos totales, atendiendo física y química en el nivel superior
+  con notas de 6 y 4 respectivamente.}). 33 estudiantes tomaron química
+(19 en nivel superior y 14 en el nivel medio), mientras que solo 21
+tomaron física (12 en NS y 9 en NM).
+
+Biología NS, Francés ab initio NM y Computer Science SL eran materias
+electivas por lo que eran excluyentes entre ellas. 30 estudiantes
+atendieron Francés ab initio, y 9 Computer Science, ambas ofrecidas solo
+en nivel medio. Biología, que se ofreció como electiva (para aquellos
+estudiantes interesados en tomar dos ciencias) presentó 12 candidatos.
+Finalmente, en el caso de matemáticas, el GCB ofrece solo una de las
+asignaturas ofrecidas por el Diploma en ambos niveles:
+\textbf{Matemáticas - Análisis y Enfoques}. En el nivel superior se
+presentaron 28 estudiantes, mientras que 25 lo hicieron en el nivel
+medio.
+
+\begin{figure}
+
+{\centering \includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-asignaturas-1.pdf}
+
+}
+
+\caption{\label{fig-distribucion-asignaturas}Alumnos inscritos por
+asignatura}
+
+\end{figure}
+
+\hypertarget{resultados}{%
+\subsection{2. Resultados}\label{resultados}}
+
+Se presentó la siguiente distribución de resultados (
+Figura~\ref{fig-distribución-resultados}). En general, la mayoría de
+estudiantes que obtuvo el diploma, alcanzaron el rango de los 25 a los
+30 puntos. Como se mencionó al inicio, el promedio de puntos obtenidos
+por aquellos quienes obtuvieron el Diploma IB fue de 29 puntos, uno por
+debajo del promedio obtenido por los estudiantes que obtuvieron su
+diploma en la sesión de noviembre 2022.
+
+La calificación promedio de alumnos del colegio que obtuvo el Diploma en
+esta convocatoria fue de 4,60; 10 décimas por debajo de la calificación
+promedio obtenida en noviembre de 2022 (4,7)
+
+\begin{figure}
+
+{\centering \includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribución-resultados-1.pdf}
+
+}
+
+\caption{\label{fig-distribución-resultados}Distribución de puntajes
+convocatoria mayo 2023}
+
+\end{figure}
+
+Los promedios de los resultados obtenidos por asignatura en la sesión de
+mayo 2023 se muestran en la Tabla~\ref{tbl-promedio} y la
+Figura~\ref{fig-promedio-asignaturas} siguiente:
+
+\hypertarget{tbl-promedio}{}
+\setlength{\LTpost}{0mm}
+\begin{longtable}{lrrr}
+\caption{\label{tbl-promedio}Promedios GCB y Mundiales IB 2023 }\tabularnewline
+
+\caption*{
+{\large \textbf{Resultados por asignaturas Diploma IB}}
+} \\ 
+\toprule
+ & \multicolumn{2}{c}{\textbf{Nota Promedio 2023}} &  \\ 
+\cmidrule(lr){2-3}
+Asignatura & GCB\textsuperscript{\textit{*}} & Mundial & GCB(2022) \\ 
+\midrule
+ESPAÑOL A NM & $5.18$ & $5.51$ & $5.20$ \\ 
+ESPAÑOL A NS & $4.90$ & $4.72$ & $4.92$ \\ 
+INGLÉS B NM & $5.88$ & $5.64$ & $6.47$ \\ 
+INGLÉS B NS & $5.86$ & $5.70$ & $5.75$ \\ 
+FRANCÉS AB NM & $4.80$ & $4.79$ & $4.71$ \\ 
+POLÍTICA GLOBAL NM & $4.79$ & $4.82$ & $4.04$ \\ 
+POLÍTICA GLOBAL NS & $4.68$ & $5.11$ & $5.03$ \\ 
+HISTORIA NM & $3.50$ & $4.66$ & $4.40$ \\ 
+FÍSICA NM & $3.65$ & $4.21$ & $3.00$ \\ 
+FÍSICA NS & $4.17$ & $4.81$ & $3.68$ \\ 
+QUÍMICA NM & $2.29$ & $4.10$ & $2.88$ \\ 
+QUÍMICA NS & $2.53$ & $4.57$ & $2.92$ \\ 
+BIOLOGÍA NS & $4.08$ & $4.40$ & $3.92$ \\ 
+COMPUTER SCIENCE NM & $3.89$ & $3.94$ & - \\ 
+MATEMÁTICAS NM & $3.36$ & $4.61$ & $3.78$ \\ 
+MATEMÁTICAS NS & $3.43$ & $4.88$ & $4.21$ \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+\textsuperscript{\textit{*}}Los resultados en cyan corresponden a las asignaturas que obtuvieron promedios por encima del promedio mundial. Los resultados en rosa establecen las asignaturas con menores resultados en la convocatoria\\
+\end{minipage}
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-promedio-asignaturas-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-promedio-asignaturas-1}Grupo 1 y Grupo 2: Español
+A, Inglés B, Francés ab initio}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-promedio-asignaturas-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-promedio-asignaturas-2}Grupo 3: Política Global,
+Historia}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-promedio-asignaturas-3.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-promedio-asignaturas-3}Grupo 4: Física, Química,
+Biología y Computer Science}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-promedio-asignaturas-4.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-promedio-asignaturas-4}Grupo 5: Matemáticas:
+Análisis y Enfoques}
+\end{minipage}%
+
+\caption{\label{fig-promedio-asignaturas}Promedios GCB 2023, promedio
+mundial y promedio GCB 2022}
+
+\end{figure}
+
+\hypertarget{comentarios-sobre-los-resultados-promedio}{%
+\subsubsection{2.1 Comentarios sobre los resultados
+promedio}\label{comentarios-sobre-los-resultados-promedio}}
+
+De estos resultados, se tiene que las asignaturas del Grupo 1 (Español
+A: Literatura) y el Grupo 2 (English B y Francés \emph{ab initio}) estan
+en los niveles del promedio mundial. Tanto English B como Francés
+\emph{ab initio}, así como Español A NS, obtuvieron promedios superiores
+al promedio alcanzado mundialmente.
+
+En el caso del Grupo 3, para Global Politics NM se observa un promedio
+alcanzado significativamente equivalente al promedio mundial. Para el
+nivel superior, el promedio del GCB es menor al obtenido de manera
+global (4,68 frente a 5,11 en el mundo). En el caso de History NM, los
+cuatro estudiantes que se presentaron como candidatos en esta asignatura
+obtuvieron en promedio una nota un punto y medio por debajo (24,9\%) del
+promedio mundial\footnote{De los cuatro estudiantes inscritos, dos
+  (Maria Alejandra Carrillo y Maria Paula Rodriguez) obtuvieron una nota
+  de 4.}.
+
+Las ciencias en general tuvieron un desempeño por debajo de los
+promedios mundiales. Computer Science SL (que presentó candidatos por
+primera vez) y Biología NS fueron las asignaturas con los puntajes más
+cercanos a los promedios mundiales (3,89 frente a 3,94 en el caso de
+Computer Science y 4,08 frente a 4,4 en el caso de Biolgía). Se destaca
+el resultado de Biología cuyos estudiantes obtuvieron en promedio una
+nota de 4,1 (aprobatoria), superando al promedio obtenido en la
+convocatoria de 2022 (3,92).
+
+Para el caso de física, los estudiantes inscritos obtuvieron notas (en
+ambos niveles) en promedio inferiores a los promedios alcanzados
+mundialmente. En el caso del nivel superior, sin embargo, el promedio
+obtenido aunque inferior al del mundo (4,87), es superior a 4 (4,17),
+considerándose un promedio aprobatorio. Se destaca que para ambos
+niveles, los resultados obtenidos en esta convocatoria fueron superiores
+a los obtenidos por los estudiantes de la primera promoción de IB en
+2022 ( Tabla~\ref{tbl-variacion-promedios} ).
+
+Por otro lado, el caso de química presenta los mayores desafíos
+pedagógicos y de evaluación. En esta convocatoria, los promedios
+obtenidos por los estudiantes estuvieron muy por debajo de los promedios
+mundiales, con casi dos puntos por debajo tanto en el nivel medio como
+en el nivel superior. De igual manera, los resultados obtenidos en esta
+asignatura durante 2023 fueron inferiores a los obtenidos en 2022, donde
+también los resultados estuvieron por debajo de los promedios mundiales.
+
+Finalmente, para el caso de Matemáticas: Análisis y Enfoques, se tiene
+que los promedios alcanzados por los estudiantes durante 2023 fueron
+inferiores a los promedios mundiales en al menos un punto y medio para
+ambos niveles. De la misma manera, los resultados obtenidos en esta
+convocatoria fueron inferiores a los obtenidos en la convocatoria de
+2022 ( Tabla~\ref{tbl-variacion-promedios} ).
+
+\hypertarget{tbl-variacion-promedios}{}
+\begin{longtable}{lrrr}
+\caption{\label{tbl-variacion-promedios}Variación promedios obtenidos por el GCB 2022-2023 }\tabularnewline
+
+\toprule
+Asignatura & GCB 2023 & GCB 2022 & Variación Porcentual \\ 
+\midrule
+ESPAÑOL A NM & 5.18 & 5.20 & $-0.38\%$ \\ 
+ESPAÑOL A NS & 4.90 & 4.92 & $-0.41\%$ \\ 
+INGLÉS B NM & 5.88 & 6.47 & $-9.12\%$ \\ 
+INGLÉS B NS & 5.86 & 5.75 & $1.91\%$ \\ 
+FRANCÉS AB NM & 4.80 & 4.71 & $1.91\%$ \\ 
+POLÍTICA GLOBAL NM & 4.79 & 4.04 & $18.56\%$ \\ 
+POLÍTICA GLOBAL NS & 4.68 & 5.03 & $-6.96\%$ \\ 
+HISTORIA NM & 3.50 & 4.40 & $-20.45\%$ \\ 
+FÍSICA NM & 3.65 & 3.00 & $21.67\%$ \\ 
+FÍSICA NS & 4.17 & 3.68 & $13.32\%$ \\ 
+QUÍMICA NM & 2.29 & 2.88 & $-20.49\%$ \\ 
+QUÍMICA NS & 2.53 & 2.92 & $-13.36\%$ \\ 
+BIOLOGÍA NS & 4.08 & 3.92 & $4.08\%$ \\ 
+COMPUTER SCIENCE NM & 3.89 & — & — \\ 
+MATEMÁTICAS NM & 3.36 & 3.78 & $-11.11\%$ \\ 
+MATEMÁTICAS NS & 3.43 & 4.21 & $-18.53\%$ \\ 
+\bottomrule
+\end{longtable}
+
+\hypertarget{aprobaciuxf3n-por-asignatura}{%
+\subsubsection{2.2 Aprobación por
+asignatura}\label{aprobaciuxf3n-por-asignatura}}
+
+En esta convocatoria se presentarón los siguientes porcentajes de
+aprobación\footnote{Se establece como \textbf{aprobación}, el porcentaje
+  de estudiantes que obtuvo una nota de 4 o más en el resultado final de
+  la asignatura.} ( Tabla~\ref{tbl-porcentajes} ). Como es evidente, las
+asignaturas con menores promedios obtenidos fueron a su vez las
+asignaturas con menor porcentaje de aprobación. \textbf{Química} fue la
+asignatura con menores promedios y con el menor número de estudiantes
+que obtuvo una nota igual o superior a 4. En el caso del nivel medio,
+todos los estudiantes inscritos (15) obtuvieron notas de 3 o menos. En
+el caso del nivel superior, de los 20 estudiantes inscritos, solo dos
+obtuvieron una nota igual o superior a 4.
+
+Se destacan las asignaturas de \textbf{Español A, English B, Global
+Politics} y \textbf{Francés ab initio}, en donde la mayoría de
+estudiantes inscritos obtuvo notas superiores o iguales a 4.
+
+\hypertarget{tbl-porcentajes}{}
+\begin{longtable}{lrr}
+\caption{\label{tbl-porcentajes}Porcentajes de aprobación por asignatura - Mayo 2023 }\tabularnewline
+
+\caption*{
+{\large \textbf{Resultados por asignaturas Diploma IB}}
+} \\ 
+\toprule
+Asignatura & Promedio GCB & Porcentaje Aprobación \\ 
+\midrule
+BIOLOGÍA NS & $4.05$ & $69\%$ \\ 
+COMPUTER SCIENCE SL & $3.84$ & $50\%$ \\ 
+ENGLISH B SL & $5.84$ & $100\%$ \\ 
+ENGLISH B HL & $5.86$ & $100\%$ \\ 
+ESPAÑOL NM & $5.18$ & $97\%$ \\ 
+ESPAÑOL NS & $4.89$ & $100\%$ \\ 
+FRANCÉS AB NM & $4.79$ & $94\%$ \\ 
+FÍSICA NM & $3.50$ & $40\%$ \\ 
+FÍSICA NS & $4.10$ & $54\%$ \\ 
+GLOBAL POLITICS SL & $4.76$ & $100\%$ \\ 
+GLOBAL POLITICS HL & $4.67$ & $100\%$ \\ 
+HISTORY SL & $3.27$ & $40\%$ \\ 
+MATEMÁTICAS NM & $3.35$ & $31\%$ \\ 
+MATEMÁTICAS NS & $3.42$ & $38\%$ \\ 
+QUÍMICA NM & $2.27$ & $0\%$ \\ 
+QUMÍMICA NS & $2.52$ & $10\%$ \\ 
+\bottomrule
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, colbacktitle=quarto-callout-important-color!10!white, toprule=.15mm, colback=white, toptitle=1mm, leftrule=.75mm, rightrule=.15mm, left=2mm, arc=.35mm, colframe=quarto-callout-important-color-frame, breakable, bottomtitle=1mm, titlerule=0mm, opacityback=0, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, coltitle=black, opacitybacktitle=0.6, bottomrule=.15mm]
+Es esencial que se haga una revisión a fondo de la \textbf{planeación} y
+\textbf{desarrollo} de las asignaturas de ciencias, especialmente en los
+casos de \textbf{física} y \textbf{química}, así como evaluar la manera
+en que debe mejorarse tanto la enseñanza como el aprendizaje de los
+cursos de \textbf{matemáticas}, cuyos resultados son bajos.
+\end{tcolorbox}
+
+\hypertarget{distribuciuxf3n-de-calificaciuxf3n-por-grupo-de-asignaturas}{%
+\subsubsection{2.3 Distribución de calificación por grupo de
+asignaturas}\label{distribuciuxf3n-de-calificaciuxf3n-por-grupo-de-asignaturas}}
+
+En la figura siguiente (
+Figura~\ref{fig-distribucion-calificaciones-asignatura} ) puede
+observarse la distribución de calificaciones para cada uno de los grupos
+de asignaturas. Como se observa, en el Grupo 1 las mejores
+calificaciones se obtuvieron en Español A con 41 estudiantes de 53
+(repartidos en NS y NM) en los nivel de calificación 5-7. Se destaca que
+todos los estudiantes estuvieron en este mismo rango de calificación en
+la asignatura English B. En el caso de Francés ab initio, 19 de los 30
+estudiantes que atendieron la clase estuvieron también en los niveles 5
+a 7.
+
+En el caso del Grupo 3, las mejores calificaciones se obtuvieron en
+Política Global, con 31 estudiantes en el rango 5-6, mientras que en
+Historia con cuatro estudiantes inscritos, dos estudiantes obtuvieron
+una nota de 3 y los otros dos, una nota de 4.
+
+Como se ha mencionado anteriormente, el Grupo 4: Ciencias, sigue
+presentando los mayores desafíos. Ningún estudiante obtuvo una
+calificación de 7 en alguna de las asignaturas del grupo. La mayoría
+obtuvo notas en los niveles 2 y 3. Solo en el caso de química, por
+ejemplo, 31 de los 33 estudiantes obtuvieron notas entre 1 y 3. En el
+caso de Biología en cambio, 9 de los 12 estudiantes inscritos obtuvieron
+notas de 4 y 5, lo que influyó en el promedio aprobatorio obtenido.
+
+Finalmente, en el caso del Grupo 5: Mátemáticas, 34 de los 53
+estudiantes obtuvo una nota de 2 o 3 en su asignatura, y 19 estuvieron
+en los niveles 4 o 5, siendo esta última, la nota más alta obtenida en
+la asignatura (por 4 estudiantes de nivel superior y 2 de nivel medio)
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-calificaciones-asignatura-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-calificaciones-asignatura-1}Grupo1 y
+Grupo 2: Español A, Inglés B, Francés ab initio}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-calificaciones-asignatura-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-calificaciones-asignatura-2}Grupo 3:
+Política Global, Historia}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-calificaciones-asignatura-3.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-calificaciones-asignatura-3}Grupo 4:
+Física, Química, Biología y Computer Science}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-calificaciones-asignatura-4.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-calificaciones-asignatura-4}Grupo 5:
+Matemáticas}
+\end{minipage}%
+
+\caption{\label{fig-distribucion-calificaciones-asignatura}Distribución
+de calificaciones por asignatura}
+
+\end{figure}
+
+\hypertarget{distribuciuxf3n-de-puntajes-totales-por-asignatura}{%
+\subsubsection{2.4 Distribución de puntajes totales por
+asignatura}\label{distribuciuxf3n-de-puntajes-totales-por-asignatura}}
+
+En la Tabla~\ref{tbl-puntos-promedio} y en la
+Figura~\ref{fig-distribucion-puntos-asignatura} se muestra información
+más detallada sobre los resultados de la convocatoria de mayo 2023 para
+las diferentes asignaturas y sus niveles, incluyendo el promedio de
+puntuación y la desviación estándar de las notas en cada asignatura y
+nivel.
+
+La puntuación promedio indica el valor medio de las puntuaciones
+obtenidas por los estudiantes en cada asignatura y nivel\footnote{El
+  puntaje total (en una escala de 0 a 100) es la suma de puntos
+  obtenidos por cada estudiante en cada uno de los componentes de
+  evaluación en su asignatura (pruebas externas, trabajos internos,
+  etc), ponderados por el peso que tiene cada uno de ellos en su
+  calificación final.''}. Por ejemplo, en la asignatura \textbf{English
+B NS} el promedio de puntuación es de 79.6, lo que se tradujo que en
+promedio los estudiantes obtuvieran una calificación en los niveles más
+altos de la escala.
+
+La desviación estándar establece la variabilidad de las notas en cada
+asignatura y nivel. Una desviación estándar alta, como en
+\textbf{Matemáticas: Análisis y Enfoques NS} (8.78), indica que las
+notas de los estudiantes están más dispersas en esta asignatura y nivel,
+lo que significa que hay una mayor variabilidad en el rendimiento
+académico de los estudiantes. Por el contrario, una desviación estándar
+baja, como en \textbf{Química NM} (4.70), sugiere que las notas están
+más concentradas alrededor del promedio, lo que indica una menor
+variabilidad en el rendimiento académico de los alumnos.
+
+Los mayores promedios de puntajes totales se encuentran en
+\textbf{English B NS} (79.6) y \textbf{English B NM} (78.1), lo que
+indica que los estudiantes, así como en la convocatoria de 2022, tienden
+a obtener calificaciones altas en esta asignatura independientemente del
+nivel en el que se inscriban. Por otro lado, los menores promedios se
+encuentran en \textbf{Matemáticas NM} (26.9) y \textbf{Química NM}
+(25.2).
+
+Las mayores dispersiones en el puntaje obtenido se encuentró en
+\textbf{Física NS} (12.8) y \textbf{Español A NM} (12.0), lo que indica
+que las notas en estas asignaturas y niveles mostraron una mayor
+variabilidad en el rendimiento de los estudiantes, o en últimas, que el
+desempeño de los alumnos tiene diferencias muy altas entre ellos. Las
+menores desviaciones estándar se encuentran en \textbf{Química NM}
+(4.70) y \textbf{Política Global NM} (5.90), lo que indica un desempeño
+mucho más estandarizado por parte de los estudiantes: tienen similares
+niveles de comprensión y de dificultad.
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-puntos-asignatura-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-puntos-asignatura-1}Grupo1 y Grupo
+2: Estudios de Lengua y Literatura y Adquisición de Lenguas}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-puntos-asignatura-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-puntos-asignatura-2}Grupo 3:
+Individuos y Sociedades}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-puntos-asignatura-3.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-puntos-asignatura-3}Grupo 4:
+Ciencias}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-distribucion-puntos-asignatura-4.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-distribucion-puntos-asignatura-4}Grupo 5:
+Matemáticas}
+\end{minipage}%
+
+\caption{\label{fig-distribucion-puntos-asignatura}Distribución de
+puntos obtenidos por asignatura}
+
+\end{figure}
+
+\hypertarget{tbl-puntos-promedio}{}
+\setlength{\LTpost}{0mm}
+\begin{longtable}{llll}
+\caption{\label{tbl-puntos-promedio}Puntuación promedio por asignatura - Mayo 2023 }\tabularnewline
+
+\toprule
+Asignatura & Nivel & Puntuación Promedio\textsuperscript{\textit{*}} & Desviación estándar \\ 
+\midrule
+BIOLOGÍA & NS & $42.75$ & $9.78$ \\ 
+ESPAÑOL A: Literatura & NS & $58.50$ & $6.22$ \\ 
+ESPAÑOL A: Literatura & NM & $63.39$ & $11.99$ \\ 
+FRANCÉS AB INITIO & NM & $59.03$ & $10.97$ \\ 
+FÍSICA & NS & $43.83$ & $12.77$ \\ 
+FÍSICA & NM & $31.89$ & $7.98$ \\ 
+HISTORIA & NM & $37.50$ & $8.94$ \\ 
+COMPUTER SCIENCE & NM & $46.33$ & $9.11$ \\ 
+INGLÉS B & NS & $79.62$ & $6.72$ \\ 
+INGLÉS B & NM & $78.06$ & $6.85$ \\ 
+MATEMÁTICAS: ANÁLISIS Y ENFOQUES & NS & $29.79$ & $8.78$ \\ 
+MATEMÁTICAS: ANÁLISIS Y ENFOQUES & NM & $26.88$ & $7.79$ \\ 
+POLÍTICA GLOBAL & NS & $47.90$ & $6.93$ \\ 
+POLÍTICA GLOBAL & NM & $45.79$ & $5.90$ \\ 
+QUÍMICA & NS & $26.47$ & $8.58$ \\ 
+QUÍMICA & NM & $25.21$ & $4.70$ \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+\textsuperscript{\textit{*}}Los resultados en cyan corresponden a las asignaturas que obtuvieron los puntajes más altos durante la convocatiria\\
+\end{minipage}
+
+\hypertarget{resultados-monografuxeda-y-tdc}{%
+\subsubsection{2.5 Resultados Monografía y
+TdC}\label{resultados-monografuxeda-y-tdc}}
+
+\hypertarget{monografuxeda}{%
+\paragraph{2.5.1 Monografía}\label{monografuxeda}}
+
+Se presentaron 53 trabajos de monografía que se distribuyeron como se
+ilustra en la Tabla~\ref{tbl-monografia} . En esta convocatoria, el
+mayor número de trabajos se realizó en las asignaturas del Grupo 3:
+Individuos y Sociedades. Política Global presentó 14 trabajos e Historia
+2 más. Español sin embargo presentó ella sola 12 trabajos de monografía.
+
+A diferencia de la primera convocatoria, en 2023 solo se realizaron 8
+trabajos en Ciencias (Biología, Química y Computer Science), pero se
+dobló el número de trabajos realizados en Matemáticas (6 monografías,
+frente a 3 de la primera convocatoria.)
+
+Se destaca que de las 53 monografías, 16 de ellas (30\%) se realizaron
+en inglés, un número igual de trabajos a los que se presentaron en este
+idioma en 2022. En esta ocasión, se presentaron en inglés 11 monografías
+en la materia \textbf{English B}, 3 en \textbf{Computer Science}, y 2 en
+\textbf{Política Global.}
+
+\hypertarget{tbl-monografia}{}
+\begin{longtable}{llc}
+\caption{\label{tbl-monografia}Distribución de Monografías 2023 }\tabularnewline
+
+\toprule
+Asignatura & Idioma & Monografíasrealizadas \\ 
+\midrule
+ESPAÑOL A & ESPAÑOL & $12$ \\ 
+POLÍTICA GLOBAL & ESPAÑOL & $12$ \\ 
+INGLÉS B & INGLÉS & $11$ \\ 
+MATEMÁTICAS & ESPAÑOL & $6$ \\ 
+BIOLOGÍA & ESPAÑOL & $4$ \\ 
+COMPUTER SCIENCE & INGLÉS & $3$ \\ 
+HISTORIA & ESPAÑOL & $2$ \\ 
+POLÍTICA GLOBAL & INGLÉS & $2$ \\ 
+QUÍMICA & ESPAÑOL & $1$ \\ 
+\bottomrule
+\end{longtable}
+
+La mayoría de los trabajos de monografía (39 de 53) estuvieron en los
+niveles B y C de calificación lo que corresponde a niveles
+satisfactorios para estos trabajos ( Figura~\ref{fig-monografias} ). Sin
+embargo, de las monografías presentadas, 13 de ellas tuvieron
+calificación D, un 18\% más que las que obtuvieron la misma calificación
+en la convocatoria de noviembre 2022. Mientras que en 2022, seis
+estudiantes tuvieron la mayor calificación (A) en su trabajo, para 2023
+solo un candidato alcanzó esta distinción (ver
+Tabla~\ref{tbl-mejormonografia-variacion}). Ninguno de nuestros
+estudiantes, al igual que en 2022, obtuvo la menor calificación en este
+componente (E), que excluye a los alumnos de la obtención del Diploma.
+
+La Tabla~\ref{tbl-mejormonografia-variacion} muestra también los datos
+relacionados con calificaciones de la monografia para 2022 y 2023, junto
+con la variación entre estos dos años.
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-monografias-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-monografias-1}Distribución calificación
+Monografías}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-monografias-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-monografias-2}Puntos ajustados de Monografía por
+asignaturas}
+\end{minipage}%
+
+\caption{\label{fig-monografias}Calificación Monografías - Mayo 2023}
+
+\end{figure}
+
+\begin{table}
+
+\caption{\label{tbl-mejormonografia-variacion}Mejores trabajos de
+Monografía 2023 - Variación de resultados Monografía
+2022-2023}\begin{minipage}[t]{\linewidth}
+\subcaption{\label{tbl-mejormonografia-variacion-1}Mejores monografías 2023 }
+
+{\centering 
+
+\begin{longtable}{lllll}
+\tabularnewline
+
+\caption*{
+{\large \textbf{Los 10 mejores trabajos de Monografía - Mayo 2023}}
+} \\ 
+\toprule
+Asignatura & Idioma & Estudiante & Puntuación & Calificación \\ 
+\midrule
+ESPAÑOL A & ESPAÑOL & PINO ROZO, DAVID & 30 & A \\ 
+ESPAÑOL A & ESPAÑOL & CASTRO TIRADO, DAVID & 26 & B \\ 
+ESPAÑOL A & ESPAÑOL & COCONUBO SANTAMARÍA, MARIA CAMILA & 26 & B \\ 
+ESPAÑOL A & ESPAÑOL & LANDEIRA QUEIROZ, MARIA LUISA & 26 & B \\ 
+ESPAÑOL A & ESPAÑOL & RAMIREZ ZORRO, ALEJANDRO & 26 & B \\ 
+ESPAÑOL A & ESPAÑOL & TACHACK ECHEVERRY, LUCIA & 26 & B \\ 
+ESPAÑOL A & ESPAÑOL & VEGA RODRÍGUEZ, JUAN DIEGO & 26 & B \\ 
+INGLÉS B & INGLÉS & GÓMEZ HERRERA, MARIA CAMILA & 26 & B \\ 
+BIOLOGÍA & ESPAÑOL & FERNANDEZ, MARIA CAMILA & 24 & B \\ 
+BIOLOGÍA & ESPAÑOL & ROQUE MATTA, LAURA CAMILA & 24 & B \\ 
+\bottomrule
+\end{longtable}
+
+}
+
+\end{minipage}%
+\newline
+\begin{minipage}[t]{\linewidth}
+\subcaption{\label{tbl-mejormonografia-variacion-2}Variación porcentual de calificación de la monografía }
+
+{\centering 
+
+\begin{longtable}{llll}
+\tabularnewline
+
+\toprule
+Calificacion & Nov 2022 & May 2023 & Variación \\ 
+\midrule
+A & $5.3\%$ & $0.9\%$ & $-83.3\%$ \\ 
+B & $8.8\%$ & $14.9\%$ & $70.0\%$ \\ 
+C & $29.8\%$ & $19.3\%$ & $-35.3\%$ \\ 
+D & $9.6\%$ & $11.4\%$ & $18.2\%$ \\ 
+E & $0.0\%$ & $0.0\%$ & ---- \\ 
+\bottomrule
+\end{longtable}
+
+}
+
+\end{minipage}%
+
+\end{table}
+
+Se presentó un aumento significativo en la obtención de la calificación
+B , con una variación positiva del 70\%. De la misma manera, la
+calificación C muestra una disminución en el porcentaje de trabajos
+calificados entre las dos convocatorias, con una variación negativa del
+35.3\%. Sin embargo, la calificación A muestra una disminución aún más
+pronunciada en el porcentaje de trabajos entre las dos convocatorias,
+con una variación negativa del 83.3\%. Mientras que en 2022, seis
+estudiantes (de un total de 61) alcanzaron la mejor calificación, en
+2023 solo uno de 53 la alcanzó.
+
+Finalmente, se evidencia un pequeño aumento en el porcentaje de
+observaciones para la calificación D entre los años 2022 y 2023, con una
+variación positiva del 18.2\%.
+
+\begin{tcolorbox}[enhanced jigsaw, colbacktitle=quarto-callout-important-color!10!white, toprule=.15mm, colback=white, toptitle=1mm, leftrule=.75mm, rightrule=.15mm, left=2mm, arc=.35mm, colframe=quarto-callout-important-color-frame, breakable, bottomtitle=1mm, titlerule=0mm, opacityback=0, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, coltitle=black, opacitybacktitle=0.6, bottomrule=.15mm]
+Es \textbf{fundamental} trabajar en el acompañamiento a los estudiantes
+del Diploma en la elaboración de su tabajo de monografía. La
+\textbf{comprensión}, no solo de los criterios de evaluación, sino de
+los elementos que se requieren para el desarrollo del trabajo, implica
+una capacitación constante por parte de los profesores y supervisores.
+\end{tcolorbox}
+
+\hypertarget{teoruxeda-del-conocimiento}{%
+\paragraph{2.5.2 Teoría del
+Conocimiento}\label{teoruxeda-del-conocimiento}}
+
+En el caso de TdC, el desempeño de los estudiantes fue similar a los
+reultados de 2022, con algunas mejoras puntuales en la banda de
+calificación ( Figura~\ref{fig-calificacion-tdc} ). Al igual que en
+2022, seis estudiantes obtuvieron las calificaciones más altas del curso
+(A y B). No obstante, en 2023, hubo una mayor proporción de estudiantes
+que alcanzaron el nivel C de calificación (un aumento del 17\% de
+estudiantes), lo que en últimas significó una reducción del porcentaje
+de estudiantes que obtuvieron los niveles más bajos de evaluación (D y
+E). Para esta convocatoria, la proporción de estudiantes que obtuvo
+calificación D bajó del 22 al 12 por ciento; y en esta ocasión ningun
+estudiante obtuvo la menor calificación (E), que es excluyente de
+obtención del programa ( ver Tabla~\ref{tbl-variacion-tdc} ).
+
+\begin{figure}
+
+{\centering \includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-calificacion-tdc-1.pdf}
+
+}
+
+\caption{\label{fig-calificacion-tdc}Calificaciones finales TdC - Mayo
+2023}
+
+\end{figure}
+
+\hypertarget{tbl-variacion-tdc}{}
+\begin{longtable}{llll}
+\caption{\label{tbl-variacion-tdc}Variación resultados TdC 2022 -2023 }\tabularnewline
+
+\toprule
+Calificacion & Nov 2022 & May 2023 & Variación \\ 
+\midrule
+A & $0.9\%$ & $0.9\%$ & $0.0\%$ \\ 
+B & $4.4\%$ & $4.4\%$ & $0.0\%$ \\ 
+C & $24.6\%$ & $28.9\%$ & $17.9\%$ \\ 
+D & $22.8\%$ & $12.3\%$ & $-46.2\%$ \\ 
+E & $0.9\%$ & $0.0\%$ & $-100.0\%$ \\ 
+\bottomrule
+\end{longtable}
+
+\hypertarget{comparaciuxf3n-notas-predichas-y-notas-obtenidas-por-asignatura}{%
+\subsubsection{2.6 Comparación notas predichas y notas obtenidas por
+asignatura}\label{comparaciuxf3n-notas-predichas-y-notas-obtenidas-por-asignatura}}
+
+Finalmente en este reporte, se presenta la comparación de las notas
+obtenidas por los estudiantes en cada asignatura y las notas predichas
+por los profesores, de la misma manera, se presenta la distribución de
+las calificaciones moderadas (otorgadas por examinadores externos) par
+los trabajos internos en cada asignatura.
+
+La comparación entre notas previstas y notas obtenidas es importante
+porque establece qué tan precisos son nuestros maestros en establecer
+los niveles de alcance de sus estudiantes, y que tanto pueden determinar
+-dados los descriptores de calificación de cada asignatura- cuales son
+las habilidades que los estudiantes pueden lograr en el transcurso del
+programa. Se establece en la Figura~\ref{fig-prevista-obtenida} la nota
+prevista y la nota obtenida por asignatura por cada estudiante. Si la
+nota prevista y la obtenida fueron equivalentes (precisión total por
+parte del profesor de la asignatura) las notas estarán sobre la línea
+diagonal. Si la nota obtenida es mayor que la nota predicha (predicción
+por debajo de la nota final), los alumnos se encontrarán por encima de
+la línea diagonal, y sucederá lo contrario si la nota obtenida es
+inferior a la nota prevista.
+
+Las notas finales de asignatura son variables discretas (niveles de
+calificación de 1 a 7 que describen cada uno de ellos un conjunto de
+atributos alcanzados por los estudiantes. Ver
+\href{/Users/JorgeEd/OneDrive\%20-\%20Gimnasio\%20Colombo\%20Británico/Descriptores\%20de\%20calificaciones\%20finales\%20del\%20Programa\%20del\%20Diploma.pdf}{Descriptores
+de Calificación Programa del Diploma} ), por lo que para mejorar la
+visualización se agrega un ruido aleatorio a la nota de cada estudiante
+con el fin de separar los resultados que se solapan entre sí.
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-prevista-obtenida-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-prevista-obtenida-1}Grupo 1: Estudios de Lengua y
+Literatura}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-prevista-obtenida-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-prevista-obtenida-2}Grupo 2: Adquisición de
+Lenguas}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-prevista-obtenida-3.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-prevista-obtenida-3}Grupo 3: Individuos y
+Sociedades}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-prevista-obtenida-4.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-prevista-obtenida-4}Grupo 4: Ciencias: Física y
+Química}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-prevista-obtenida-5.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-prevista-obtenida-5}Grupo 4: Ciencias: Biología y
+Computer Science}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-prevista-obtenida-6.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-prevista-obtenida-6}Grupo 5: Matemáticas}
+\end{minipage}%
+
+\caption{\label{fig-prevista-obtenida}Comparación nota prevista vs.~nota
+obtenida Diploma IB 2023}
+
+\end{figure}
+
+Se observa que para la convocatoria de 2023 las asignaturas de
+Matemáticas y Física fueron en las que hubo una mayor precisión en la
+calificación prevista frente a la obtenida por los estudiantes (
+Figura~\ref{fig-diferencia-previstaobtenida} ). Sin embargo, cabe
+destacar que al igual que en 2022, en la mayoría de los casos, el
+promedio de las diferencias entre estas calificaciones es inferior a un
+punto, lo cual es una variación considerada como aceptable y que denota
+una comprensión de los elementos centrales de los descriptores de
+calificación del IB, así como un seguimiento al proceso de aprendizaje
+de los estudiantes que le permite a los profesores dar cuenta de los
+alcances efectivos de los alumnos en cáda una de las clases.
+
+En el caso de Español A: Literatura y English B, las diferencias
+muestran que en promedio los profesores predijeron que sus estudiantes
+estarían en promedio en algo menos de un punto por debajo de la nota
+obtenida al final por los estudiantes. En el caso de Política Global,
+ocurre el caso contrario, donde los estudiantes obtuvieron en promedio
+medio punto por debajo de lo que se predijo que obtendrían.
+
+Para esta convocatoria se encuentra que en el caso de Química, los
+estudiantes obtuvieron en promedio un punto completo por debajo de la
+nota prevista, al igual que en Historia, en la que los cuatro
+estudiantes que se presentaron como candidatos obtuvieron en promedio un
+punto y medio menos de lo que se havia previsto que obtuvieran.
+
+\begin{figure}
+
+{\centering \includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-diferencia-previstaobtenida-1.pdf}
+
+}
+
+\caption{\label{fig-diferencia-previstaobtenida}Diferencias promedio
+entre nota obtenida y nota prevista por asignatura - Mayo 2023}
+
+\end{figure}
+
+\begin{tcolorbox}[enhanced jigsaw, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, colback=white, toptitle=1mm, leftrule=.75mm, rightrule=.15mm, left=2mm, arc=.35mm, colframe=quarto-callout-tip-color-frame, breakable, bottomtitle=1mm, titlerule=0mm, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, coltitle=black, opacitybacktitle=0.6, bottomrule=.15mm]
+Es importante que los departamentos utilicen los atributos establecidos
+en los
+\href{/Users/JorgeEd/OneDrive\%20-\%20Gimnasio\%20Colombo\%20Británico/Descriptores\%20de\%20calificaciones\%20finales\%20del\%20Programa\%20del\%20Diploma.pdf}{Descriptores
+de Calificación Programa del Diploma} para el diseño de desempeños e
+instrumentos de evaluación. Los descriptores indican lo que se espera
+que el estudiante sea capaz de alcanzar a lo largo del Programa. La
+lectura y análisis de estos descriptores con los estudiantes, más el
+ejemplo pedadógico de cómo estos atributos se transforman en elementos
+prácticos dentro del salón de clase, permite una \textbf{comprensión}
+mucho más efectiva de la conexión entre el currículo enseñado y el
+currículo evaluado del Diploma.
+\end{tcolorbox}
+
+\hypertarget{resultados-trabajos-internos.}{%
+\paragraph{2.6.2 Resultados trabajos
+internos.}\label{resultados-trabajos-internos.}}
+
+En la Figura~\ref{fig-trabajosinternos} se encuentra la distribución de
+puntos (marcas) obtenidas en los \textbf{trabajos internos} realizados
+en cada una de las asignaturas de la convocatoria de 2023. Es importante
+recordar que los trabajos internos son realizados durante el desarrollo
+del programa y son \textbf{calificados} por los profesores del colegio
+pero \textbf{moderados} externamente.
+
+Esto quiere decir que examinadores externos evaluan una \textbf{muestra
+aleatoria} de los trabajos y con base en una evaluación estandarizada
+realizada por un equipo de calificación (Ver
+\href{https://gcbedu-my.sharepoint.com/:w:/g/personal/jorge_baquero_gcb_edu_co/ERPkujLt3cxOmSvqGgB_nZkBO3CTetFTRnR0So4bU0VZAw?e=a7stXi}{T}\href{https://gcbedu-my.sharepoint.com/:b:/g/personal/jorge_baquero_gcb_edu_co/EVuAFyiF1sxKgPkM42pP3coBNUqCyVD0jUB2mELz2BWs0w?e=FBcclx}{rabajos
+Internos en el IB}).
+
+\begin{figure}
+
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-trabajosinternos-1.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-trabajosinternos-1}Grupo 1: Estudios de Lengua y
+Literatura}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-trabajosinternos-2.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-trabajosinternos-2}Grupo 2: Adquisición de
+Lenguas}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-trabajosinternos-3.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-trabajosinternos-3}Grupo 3: Individuos y
+Sociedades}
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{Resultados-DP-2023_pdf_files/figure-pdf/fig-trabajosinternos-4.pdf}
+
+}
+
+}
+
+\subcaption{\label{fig-trabajosinternos-4}Grupos 4 y 5: Ciencias y
+Matemáticas}
+\end{minipage}%
+
+\caption{\label{fig-trabajosinternos}Distribución de calificación de
+trabajos internos por asignaturas}
+
+\end{figure}
+
+En general, se observa que en la mayoría de las asignaturas, los
+trabajos internos estuvieron por debajo de los puntos máximos en cada
+una de ellas. Se destaca el caso de \textbf{English B,} en donde la
+mayor parte de los estudiantes obtuvo los puntajes más altos,
+permitiendoles alcanzar los niveles 6 y 7 de calificación en este
+componente de evaluación. De igual manera, los trabajos internos de
+\textbf{Español}, las notas obtenidas por los estudiantes, aunque
+presentan una alta dispersión, en general fueron satisfactorias.
+
+Por otro lado, en el caso de \textbf{Frances \emph{ab initio}}, aunque
+la nota final de la asignatura fue satisfactoria, la dispersión de los
+datos en el trabajo interno muestra que hay una disparidad en la
+capacidad y alcance de los estudiantes en la realización de este trabajo
+(evaluación oral individual).
+
+Los trabajos internos de la asignatura de \textbf{Historia} estuvieron
+muy por debajo de los resultados esperados y por lo tanto, de los
+niveles de calificación más altos;, lo que afectó mientras que en el
+caso de \textbf{Política Global}, la mayoría de estudiantes obtuvo
+resultados por encima de la media en la escala de calificación, lo que
+les permitió estar en los niveles 4 y 5 de su trabajo interno.
+
+En el caso de las ciencias \textbf{Física} tuvo los mejores resultados
+en el desarrollo de su trabajo de investigación, si bien la dispersión
+de las calificaciones es amplia y requiere una mejora en el proceso de
+calificación y estandarización. Los resultados promedio de los trabajos
+de \textbf{Computer Science} presentaron una amplia disparidad, y
+estuvieron en promedio 15 puntos por debajo del máximo de 34, lo que
+influyó a que no se obtuvieran mejores notas en la clase.
+
+Finalmente, \textbf{Matemáticas} y \textbf{Química} presentaron los
+resultados más bajos en sus trabajos internos. En el primer caso, las
+investigaciones presentadas estuvieron casi 10 puntos por debajo del
+máximo de 24, lo que terminó por hacer que los estudiantes obtuvieran
+calificaciones en los niveles 2 y 3 (de un máximo de 7) para este
+componente.
+
+Aunque hubo estudiantes que obtuvieron muy buenas calificaciones en el
+trabajo interno de matemáticas, la dispersión de los puntos obtenidos
+indica una amplia variabilidad en la comprensión, la investigación y la
+ejecución de este trabajo.
+
+\begin{tcolorbox}[enhanced jigsaw, colbacktitle=quarto-callout-warning-color!10!white, toprule=.15mm, colback=white, toptitle=1mm, leftrule=.75mm, rightrule=.15mm, left=2mm, arc=.35mm, colframe=quarto-callout-warning-color-frame, breakable, bottomtitle=1mm, titlerule=0mm, opacityback=0, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, coltitle=black, opacitybacktitle=0.6, bottomrule=.15mm]
+Es fundamental que se revisen los procesos de planeación y práctica
+pedagógica que se desarrollen para la realización de los
+\textbf{trabajos internos}. Es necesario que se haga énfasis en la
+comprensión de sus objetivos y criterios de evaluación. Dentro de la
+planeación debe plantearse no solo la presentación y el trabajo
+individual en la realización de los trabajos, sino que debe haber una
+\textbf{modelación estricta} y un \textbf{acompañamiento eficaz} en cada
+asignatura para la realización de este componente.
+
+Los departamentos deben hacer visibles estratégias pedagógicas para una
+calificación más precisa de cada uno de los criterios establecidos para
+los trabajos internos en cada asignatura. Por ejemplo, utilizar los
+criterios de evaluación para diseñar instrumentos (desempeños) que
+permitan a los estudiantes comprender los requerimientos en cada uno de
+ellos, y a los profesores, ejercitar su capacidad de calificación.
+\end{tcolorbox}
+
+
+
+\end{document}
